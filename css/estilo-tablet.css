@@ -1,0 +1,324 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+    }
+    
+    body{
+        font-family: Arial;
+    }
+    
+    
+    .nav{
+      background-color: #e4e4e4;
+    
+        --img1: scale(1);
+        --img2: scale(0);
+    }
+    
+    .nav:has( .dropdown:target ){
+        --img1: scale(0);
+        --img2: scale(1);
+    
+        --clip:inset(0 0 0 0);
+    
+    }
+    
+    .nav__container{
+        width: 90%;
+        margin: 0 auto;
+        height: 70px;
+    
+        display: grid;
+        grid-template-columns: max-content max-content;
+        grid-template-areas: "title img";
+        justify-content: space-between;
+        align-items: center;
+    
+        overflow: hidden;
+    }
+    
+    .nav__title{
+        width: 20%;
+    }
+    
+    
+    .nav__menu{
+        grid-area: img;
+        position: relative;
+        z-index: 10;
+    
+        transform: var(--img1);
+    }
+    
+    .nav__menu--second{
+        transform: var(--img2);
+    }
+    
+    .nav__icon{
+        width: 30px;
+        display: block;
+    }
+    
+    .dropdown{
+        position: absolute;
+        background-color: #000;
+        width: 75%;
+        max-width: 300px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding: 1em;
+    
+        display: grid;
+        align-content:center ;
+        gap: 1rem;
+    
+        overflow-y: auto;
+    
+    
+        clip-path: var(--clip, inset(0 0 100% 100%));
+        transition: clip-path .5s;
+    }
+    
+    .dropdown__list{
+        list-style: none;
+    }
+    
+    .dropdown__link{
+        color: rgb(184, 187, 191);
+        padding: 1em .7em;
+        text-decoration: none;
+        
+        display: flex;
+        align-items: center;
+        gap: .6rem;
+    
+        position: relative;
+        background-color: var(--bg, transparent);
+        border-radius: 6px;
+    }
+    
+    .dropdown__list:has( :checked ){
+        --rows: 1fr;
+        --rotate: rotate(180deg);
+        --bg: #28303B;
+    }
+    
+    .dropdown__check{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+    }
+    
+    .dropdown__arrow{
+        margin-left: auto;
+        transform: var(--rotate, 0);
+        transition: .2s transform;
+    }
+    
+    .dropdown__content{
+        display: grid;
+        grid-template-rows: var(--rows, 0fr);
+        transition: .3s grid-template-rows;
+    }
+    
+    .dropdown__sub{
+        overflow: hidden;
+    
+    }
+    
+    .dropdown__li{
+        width: 85%;
+        list-style: none;
+        margin-left: auto;
+    }
+    
+    .dropdown__anchor{
+        padding: 1em 0;
+        display: block;
+        color: #B6BABE;
+        text-decoration: none;
+    }
+  
+    .imagen1{
+      width: 40%;
+      display: none;
+    }
+    .imagen2{
+      width: 90%;
+      margin-top: 3%;
+  
+  
+    }
+    .video-container {
+      position: relative; /* Asegura que el contenedor sea posicionado */
+      z-index: -1; /* Coloca el video detrás del contenido */
+  }
+  /* Estilos para el formulario y campos */
+  .formulario-reserva {
+      display: none;
+      flex-direction: column;
+      padding: 4%;
+      font-family: 'ImpressumStd-Roman', Arial, sans-serif;
+      background-color: rgb(119, 0, 0);
+      color: white;
+    }
+    
+    .label-reserva {
+      flex-basis: 30%; /* Ancho del label (etiqueta) */
+      margin-bottom: 10px;
+      padding-left: 25px;
+      font-size: 16px;
+    }
+    
+    .input-reserva{
+      flex-basis: 65%; /* Ancho del input y botón */
+      margin-left: 4px;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ffffff;
+      border-radius: 3px;
+    }
+    
+    .button-reserva {
+  
+      margin-left: 50px;
+      margin-right: 50px;
+      background-color: #ffffff; /* Color de fondo rojo */
+      color: #050505; /* Color de las letras blancas */
+      border: 3px solid #000000; /* Borde blanco de 2px */
+      border-radius: 5px; /* Bordes redondos */
+      padding: 15px 25px; /* Espacio interno alrededor del texto */
+      font-size: 16px; /* Tamaño de fuente */
+      cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+      font-family: 'ImpressumStd-Roman', Arial, sans-serif;
+    }
+    
+    .button-reserva:hover {
+      background-color: #b80606;
+      color: #ffffff;
+    }
+    
+    .button-reserva:active {
+      background-color: #ff0000;
+      color: #ffffff;
+    }
+     /* Notificacion Superior */
+     .avisos{
+      background-color: red;
+      margin: 0 auto;
+      padding: 5px;
+      font-family: 'Overpass-Regular';
+    }
+    .novedades {
+      margin: 0 auto;
+      font-size:15px;
+      background-color: #f1f1f1;
+      border-radius: 8px;
+      opacity: 0; /* Establece la opacidad inicial en 0 */
+      transition: opacity 0.5s ease-in-out; /* Aplica una transición suave */
+    
+    } 
+    .novedades.visible {
+      opacity: 1; /* Muestra el aviso de novedades con opacidad completa */
+    }
+  
+    #contenido{
+      margin-right: 3%;
+      margin-left: 3%;
+      margin-bottom: 5%;
+    }
+    .bloques{
+      margin-top: 5%;
+      font-size: 140%;
+      font-family: 'ImpressumStd-Roman';
+      margin-right: 5%;
+      margin-left: 5%;
+    }
+    .bloque1{
+  
+    }
+    .bloque2, .bloque3{
+        
+        margin-top: 6%;
+        
+    }
+    .textobloque1{
+      font-size: 80%;
+    }
+    .titulo {
+      
+      margin: 5px 0;
+    }
+    h1{
+      font-family: 'Clarendon-Serial-Heavy';
+      font-size: 40px;
+      color: #cf0303; /* Color del texto */
+      -webkit-text-stroke: 2px #000; /* Contorno del texto */
+      text-stroke: 2px #000; /* Contorno del texto */
+    }
+  
+    footer {
+      background-color:rgb(119, 0, 0);
+      color: #fff;
+      padding: 32px;
+      font-size: 120%;
+    }
+    
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .footer-links li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    
+    .footer-links li:last-child {
+      margin-right: 0;
+    }
+    
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+    /* Declara la fuente personalizada */
+  @font-face {
+    font-family: 'Clarendon-Serial-Heavy';
+    src: url('/dropdowncss-main/assets/fonts/Clarendon-Serial-Heavy\ Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Declara la fuente personalizada */
+  @font-face {
+  font-family: 'ImpressumStd-Roman';
+  src: url('/dropdowncss-main/assets/fonts/ImpressumStd-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  }
+  
+  /* Declara la fuente personalizada */
+  @font-face {
+  font-family: 'Overpass-Regular';
+  src: url('/dropdowncss-main/assets/fonts/Overpass-Regular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  }
+}
