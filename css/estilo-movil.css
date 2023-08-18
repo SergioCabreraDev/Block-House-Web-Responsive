@@ -13,7 +13,7 @@
   
   
   .nav{
-    background-color: #e4e4e4;
+    background-color: #fafafa;
   
       --img1: scale(1);
       --img2: scale(0);
@@ -89,7 +89,7 @@
   }
   
   .dropdown__link{
-      color: rgb(184, 187, 191);
+      color: rgb(255, 255, 255);
       padding: 1em .7em;
       text-decoration: none;
       
