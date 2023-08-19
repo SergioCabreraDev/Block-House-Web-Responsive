@@ -1,5 +1,5 @@
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1500px) {
    /* Estilos generales para todo el documento */
 body {
     font-family: Arial, sans-serif;
@@ -195,8 +195,8 @@ h1{
   text-stroke: 2px #000; /* Contorno del texto */
 }
 #contenido{
-  margin-right: 20%;
-  margin-left: 20%;
+  margin-right: 15%;
+  margin-left: 15%;
   margin-bottom: 5%;
 }
 .bloques{
@@ -215,7 +215,7 @@ h1{
     
 }
 .imagen1{
-    width: 40%;
+    width: 35%;
 }
 .imagen2{
   display: none;
@@ -300,6 +300,323 @@ src: url('../assets/fonts/Overpass-Regular.ttf') format('opentype');
 font-weight: normal;
 font-style: normal;
 }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (min-width: 1024px) and (max-width: 1500px) {
+   /* Estilos generales para todo el documento */
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para la barra de navegación */
+  .nav {
+    background-color: #e4e4e4;
+    color: white;
+    padding: 10px 0;
+    
+  }
+  
+  .nav__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .nav__title {
+    width: 35%;
+    margin: 0;
+  }
+  
+  .nav__menu {
+    display: block;
+  }
+  
+  /* Estilos para el menú desplegable */
+  .dropdown {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .dropdown__list {
+    position: relative;
+  }
+  
+  .dropdown__link {
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 15px 25px;
+  }
+  
+  .dropdown__icon {
+    width: 20px;
+    margin-right: 10px;
+  }
+  
+  .dropdown__arrow {
+    width: 10px;
+    margin-left: 5px;
+  }
+  
+  .dropdown__check {
+    display: none;
+  }
+  
+  /* Estilos para el contenido del menú desplegable */
+  .dropdown__content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #e4e4e4;
+    display: none;
+    
+  }
+  
+  .dropdown__sub {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+  }
+  
+  .dropdown__li {
+    padding: 5px 20px;
+  }
+  
+  .dropdown__anchor {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  /* Mostrar contenido del menú al hacer hover */
+  .dropdown__list:hover .dropdown__content {
+    display: block;
+  }
+  
+
+    .nav__menu {
+      display: none;
+    }
+    
+    .dropdown__check {
+      display: none;
+    }
+    
+    
+    .dropdown__list:hover .dropdown__content {
+      display: block;
+    }
+
+    /* Estilos para el formulario y campos */
+.formulario-reserva {
+  margin: 0 auto; /* Centrar el formulario en la página */
+  padding-top: 100%;
+  padding-top: 8px;
+  font-family: 'ImpressumStd-Roman', Arial, sans-serif;
+  background-color: rgb(119, 0, 0);
+  color: white;
+}
+
+.label-reserva {
+  flex-basis: 30%; /* Ancho del label (etiqueta) */
+  margin-bottom: 10px;
+  padding-left: 25px;
+  font-size: 16px;
+}
+
+.input-reserva{
+  flex-basis: 65%; /* Ancho del input y botón */
+  margin-left: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+}
+
+.button-reserva {
+  margin-left: 30px;
+  background-color: #ffffff; /* Color de fondo rojo */
+  color: #050505; /* Color de las letras blancas */
+  border: 3px solid #000000; /* Borde blanco de 2px */
+  border-radius: 5px; /* Bordes redondos */
+  padding: 10px 20px; /* Espacio interno alrededor del texto */
+  font-size: 13px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  font-family: 'ImpressumStd-Roman', Arial, sans-serif;
+}
+
+.button-reserva:hover {
+  background-color: #b80606;
+  color: #ffffff;
+}
+
+.button-reserva:active {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+
+    /* Notificacion Superior */
+.avisos{
+  background-color: red;
+  margin: 0 auto;
+  padding: 5px;
+  font-family: 'Overpass-Regular';
+}
+.novedades {
+  margin: 0 auto;
+  font-size:20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  opacity: 0; /* Establece la opacidad inicial en 0 */
+  transition: opacity 0.5s ease-in-out; /* Aplica una transición suave */
+
+} 
+.novedades.visible {
+  opacity: 1; /* Muestra el aviso de novedades con opacidad completa */
+}
+
+#video{
+  width: 45%;
+}
+.titulo {
+    
+  margin: 5px 0;
+}
+h1{
+  font-family: 'Clarendon-Serial-Heavy';
+  font-size: 48px;
+  color: #cf0303; /* Color del texto */
+  -webkit-text-stroke: 2px #000; /* Contorno del texto */
+  text-stroke: 2px #000; /* Contorno del texto */
+}
+#contenido{
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+.bloques{
+  margin-top: 5%;
+  font-size: 100%;
+  font-family: 'ImpressumStd-Roman';
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.bloque1{
+    display: flex;
+}
+.bloque2, .bloque3{
+    display: flex;
+    margin-top: 3%;
+    
+}
+.imagen1{
+    width: 38%;
+}
+.imagen2{
+  display: none;
+}
+.textobloque1{
+  
+    margin-right: 6%;
+    margin-left: 6%;
+}
+/* Estilos para el efecto de escala */
+.imagen1 {
+    transition: transform 0.3s ease;
+  }
+  
+  .imagen1:hover {
+    transform: scale(1.1); /* Ajusta el valor según el grado de agrandamiento deseado */
+  }
+
+  footer {
+    background-color:rgb(119, 0, 0);
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .footer-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+
+  .superior {
+    position: sticky;
+    top: 0; /* Mantén el contenido pegado en la parte superior */
+    background-color: white; /* Ajusta el fondo según tus necesidades */
+    z-index: 1; /* Asegúrate de que el contenido esté en un nivel superior */
+  }
+  
+/* Declara la fuente personalizada */
+@font-face {
+  font-family: 'Clarendon-Serial-Heavy';
+  src: url('../assets/fonts/Clarendon-Serial-Heavy\ Regular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Declara la fuente personalizada */
+@font-face {
+font-family: 'ImpressumStd-Roman';
+src: url('../assets/fonts/ImpressumStd-Bold.otf') format('opentype');
+font-weight: normal;
+font-style: normal;
+}
+
+/* Declara la fuente personalizada */
+@font-face {
+font-family: 'Overpass-Regular';
+src: url('../assets/fonts/Overpass-Regular.ttf') format('opentype');
+font-weight: normal;
+font-style: normal;
+}
+
   }
   
     
