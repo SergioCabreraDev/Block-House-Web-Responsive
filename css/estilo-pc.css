@@ -280,7 +280,7 @@ h1{
 /* Declara la fuente personalizada */
 @font-face {
   font-family: 'Clarendon-Serial-Heavy';
-  src: url('/dropdowncss-main/assets/fonts/Clarendon-Serial-Heavy\ Regular.ttf') format('opentype');
+  src: url('../assets/fonts/Clarendon-Serial-Heavy\ Regular.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -288,7 +288,7 @@ h1{
 /* Declara la fuente personalizada */
 @font-face {
 font-family: 'ImpressumStd-Roman';
-src: url('/dropdowncss-main/assets/fonts/ImpressumStd-Bold.otf') format('opentype');
+src: url('../assets/fonts/ImpressumStd-Bold.otf') format('opentype');
 font-weight: normal;
 font-style: normal;
 }
@@ -296,7 +296,7 @@ font-style: normal;
 /* Declara la fuente personalizada */
 @font-face {
 font-family: 'Overpass-Regular';
-src: url('/dropdowncss-main/assets/fonts/Overpass-Regular.ttf') format('opentype');
+src: url('../assets/fonts/Overpass-Regular.ttf') format('opentype');
 font-weight: normal;
 font-style: normal;
 }
