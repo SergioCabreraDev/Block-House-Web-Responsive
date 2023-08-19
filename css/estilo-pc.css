@@ -116,7 +116,7 @@ body {
   margin: 0 auto; /* Centrar el formulario en la página */
   padding-top: 100%;
   padding-top: 8px;
-  font-family: 'ImpressumStd-Roman', Arial, sans-serif;
+  font-family: Arial, sans-serif;
   background-color: rgb(119, 0, 0);
   color: white;
 }
@@ -146,7 +146,7 @@ body {
   padding: 10px 20px; /* Espacio interno alrededor del texto */
   font-size: 13px; /* Tamaño de fuente */
   cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  font-family: 'ImpressumStd-Roman', Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .button-reserva:hover {

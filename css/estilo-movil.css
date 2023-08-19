@@ -67,7 +67,7 @@
       position: absolute;
       background-color: #000;
       width: 75%;
-      max-width: 300px;
+      max-width: 70%;
       right: 0;
       top: 0;
       bottom: 0;
@@ -242,9 +242,7 @@
     margin-right: 5%;
     margin-left: 5%;
   }
-  .bloque1{
-
-  }
+ 
   .bloque2, .bloque3{
       
       margin-top: 9%;

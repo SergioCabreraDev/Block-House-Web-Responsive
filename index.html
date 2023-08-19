@@ -81,7 +81,7 @@
             
         <form class="formulario-reserva" action="/ruta/del/servidor" method="POST">
             
-            <label class="label-reserva" for="campo1">RESTAURANTE:</label>
+         <b>   <label class="label-reserva" for="campo1">RESTAURANTE:</label>
             <select class="input-reserva" name="campo1">
                 <option value="" disabled selected>Selecciona un restaurante</option>
                 <option value="opcion1">Málaga Larios</option>
@@ -100,10 +100,10 @@
             <label class="label-reserva" for="campo3">PERSONAS:</label>
             <input class="input-reserva" type="number" id="campo3" name="campo3" placeholder="Numero de Personas">
 
-            <button class="button-reserva" type="submit">RESERVAR</button>
+            <button class="button-reserva" type="submit"><b>RESERVAR</b></button></b>
         </form>
         <div class="novedades">
-        <b><p class="avisos">🢚 Esta disponible "take away" en algunos restaurantes. Detalles en a "Pide para llevar" 🢘</p></b>
+        <b><p class="avisos"> Esta disponible "take away" en algunos restaurantes. Detalles en "Pide para llevar" </p></b>
         </div>
     </div> 
     </div>
@@ -172,6 +172,15 @@
           </footer>
  
 <script>
+ // Obtenemos el elemento del input de fecha
+ const fechaInput = document.getElementById('campo2');
+
+// Obtenemos la fecha actual en formato yyyy-mm-dd
+const fechaActual = new Date().toISOString().slice(0, 10);
+
+// Establecemos la fecha actual como valor predeterminado en el input de fecha
+fechaInput.value = fechaActual;
+
     // En tu archivo JavaScript
 const novedadesElement = document.querySelector('.novedades');
 
