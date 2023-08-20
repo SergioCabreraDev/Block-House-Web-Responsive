@@ -273,6 +273,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 80%;
   }
   
   .footer-links {
@@ -297,6 +298,80 @@
   
   .footer-links a:hover {
     text-decoration: underline;
+  }
+  .titulo-larios{
+    padding-top: 3%;
+    font-family: 'ImpressumStd-Roman';
+    text-align: center;
+    font-size: 30px;
+  }
+  #contenedor-larios{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    justify-content: center;
+    gap: 90px;
+    font-family: 'Overpass-Regular';
+    background-color: #ffffff;
+  }
+
+  .foto-encargado{
+    width: 100%;
+  }
+  #foto-nombre{
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    padding-bottom: 10%;
+  }
+  .foto-encargado-sandra{
+    width: 80%;
+  }
+  .foto-encargado-franzi{
+    width: 95%;
+  }
+
+
+  #direccion-mapa{
+    display: flex;
+    flex-direction: column;
+  }
+  .maps{
+width: 100%;
+  }
+
+  #horarios{
+    display: none;
+  }
+
+  .parrafo-direccion{
+    padding-right: 1%;
+  }
+
+
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2%;
+  }
+
+  .image {
+    margin: 10px;
+  }
+
+  .image img {
+    margin-top: 5%;
+    width: 400px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: auto;
+  }
+  .imagenes-restaurantes{
+    transition: transform 0.3s ease;
+  }
+
+  .imagenes-restaurantes:hover {
+    transform: scale(1.1); /* Ajusta el valor según el grado de agrandamiento deseado */
   }
   /* Declara la fuente personalizada */
 @font-face {

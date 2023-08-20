@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagenes/bh-favicon.ico"/>
+    <link rel="stylesheet" href="../css/estilo-movil.css">
+    <link rel="stylesheet" href="../css/estilo-tablet.css">
+    <link rel="stylesheet" href="../css/estilo-pc.css">
+    <title>Block House - Best Steaks since 1968</title>
+</head>
+<body>
+
+    <div class="superior">
+    
+        <nav class="nav">
+    
+            <div class="nav__container">
+    
+                <a href="../index.html"><img class="nav__title" src="../assets/logonavbar.png" alt=""></a>
+    
+                <a href="#menu" class="nav__menu">
+                    <img src="../assets/menu-icon.svg" class="nav__icon">
+                </a>
+    
+                <a href="#" class="nav__menu nav__menu--second">
+                    <img src="../assets/close.svg" class="nav__icon ">
+                </a>
+    
+                <ul class="dropdown" id="menu">
+    
+                    <li class="dropdown__list">
+                        <a href="#" class="dropdown__link">
+                            <span class="dropdown__span"><B>RESTAURANTES Y HORARIOS</B></span>
+                            <img src="../assets/down.svg" class="dropdown__arrow">
+    
+                            <input type="checkbox" class="dropdown__check">
+                        </a>
+    
+                        <div class="dropdown__content">
+    
+                            <ul class="dropdown__sub">
+                                <li class="dropdown__li"><a href="../Restaurantes/malaga-larios.html" class="dropdown__anchor">Málaga Larios</a></li>
+                                <li class="dropdown__li"><a href="../Restaurantes/malaga-plaza-mayor.html" class="dropdown__anchor">Málaga Plaza Mayor</a></li>
+                                <li class="dropdown__li"><a href="../Restaurantes/marbella.html" class="dropdown__anchor">Marbella</a></li>
+                                <li class="dropdown__li"><a href="../Restaurantes/Palma.html" class="dropdown__anchor">Palma</a></li>
+                                <li class="dropdown__li"><a href="../Restaurantes/SantaPonsa.html" class="dropdown__anchor">Santa Ponsa</a></li>
+                                <li class="dropdown__li"><a href="../Restaurantes/FestivalPark.html" class="dropdown__anchor">Festival Park</a></li>
+                                <li class="dropdown__li"><a href="../Restaurantes/PortoPi.html" class="dropdown__anchor">Porto Pi</a></li>
+                            </ul>
+    
+                        </div>
+                    </li>
+    
+                    <li class="dropdown__list">
+                        <a href="../Pide_Para_Llevar/pide-para-llevar.html" class="dropdown__link">
+                            <span class="dropdown__span"><B>PIDE PARA LLEVAR</B></span>
+                        </a>
+                    </li>
+    
+                    
+    
+                    <li class="dropdown__list">
+                        <a href="#" class="dropdown__link">
+                            <span class="dropdown__span"><B>CARTA</B></span>
+    
+                        </a>
+                    </li>
+    
+                    <li class="dropdown__list">
+                        <a href="#" class="dropdown__link">
+                            <span class="dropdown__span"><B>INICIAR SESION</B></span>
+                        </a>
+                    </li>
+    
+                </ul>
+    
+            </div>
+    
+        </nav>
+        <center>
+                
+            <form class="formulario-reserva" action="/ruta/del/servidor" method="POST">
+                
+             <b>   <label class="label-reserva" for="campo1">RESTAURANTE:</label>
+                <select class="input-reserva" name="campo1">
+                    <option value="" disabled selected>Selecciona un restaurante</option>
+                    <option value="opcion1">Málaga Larios</option>
+                    <option value="opcion2">Málaga Plaza Mayor</option>
+                    <option value="opcion3">Marbella</option>
+                    <option value="opcion4">Palma</option>
+                    <option value="opcion5">Santa Ponsa</option>
+                    <option value="opcion6">Festival Park</option>
+                    <option value="opcion7">Porto Pi</option>
+                    <!-- Agrega más opciones según tus necesidades -->
+                </select>                
+    
+                  <label class="label-reserva" for="campo2">FECHA:</label>
+                  <input class="input-reserva" type="date" id="campo2" name="campo2"  placeholder="Selecciona una fecha">
+    
+                <label class="label-reserva" for="campo3">PERSONAS:</label>
+                <input class="input-reserva" type="number" id="campo3" name="campo3" placeholder="Numero de Personas">
+    
+                <button class="button-reserva" type="submit"><b>RESERVAR</b></button></b>
+            </form>
+         
+        </div> 
+        </div>
+        </div> 
+
+
+
+    <h2 class="titulo-larios">MÁLAGA LARIOS</h2>
+    <div id="contenedor-larios">
+            <div id="foto-nombre">
+                <div>
+                    <img class="foto-encargado" src="../imagenes/ricardo.webp" alt="">
+                    <p>Ricardo Gerosa</p>  
+                </div>
+                <div id="horarios1">
+                    <h2>Horario</h2>
+                   <b><p>¡ Esperamos ilusionados verle ! <br></b>
+                        Lunes:	13:00-22:30<br>
+                        Martes:	13:00-22:30<br>
+                        Miercoles:	13:00-22:30<br>
+                        Jueves:	13:00-22:30<br>
+                        Viernes:	13:00-22:30<br>
+                        Sabado:	13:00-22:30<br>
+                        Domingo:	13:00-22:30<br>
+                        <b>Reserva Online <a href="#">clic AQUI</a></p></b>
+                </div>            
+            </div>
+            <div id="direccion-mapa">
+                <p class="parrafo-direccion">Plaza de la Solidaridad,
+                    29002, Málaga. <br><a href="">952-368-005</a>☎️<br>
+                    En el Centro Comercial Larios entrada del sur</p>
+                <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1599.1589316832594!2d-4.433263372442401!3d36.71492655951831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f79beea7f565%3A0x641fbe0be7cfda9f!2sBlock%20House!5e0!3m2!1ses!2ses!4v1689578694566!5m2!1ses!2ses" 
+                width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="horarios">
+                <h2>Horario</h2>
+               <b><p>¡ Esperamos ilusionados verle ! <br></b>
+                    Lunes:	13:00-22:30<br>
+                    Martes:	13:00-22:30<br>
+                    Miercoles:	13:00-22:30<br>
+                    Jueves:	13:00-22:30<br>
+                    Viernes:	13:00-22:30<br>
+                    Sabado:	13:00-22:30<br>
+                    Domingo:	13:00-22:30<br>
+                    <b>Reserva Online <a href="#">clic AQUI</a></p></b>
+            </div>
+    </div>
+</div>
+    <div class="gallery">
+        <div class="image">
+            <img class="imagenes-restaurantes" src="../imagenes/foto-malaga-larios.webp" alt="">
+        </div>
+        <div class="image">
+          <img class="imagenes-restaurantes" src="../imagenes/foto-malaga-larios2.webp" alt="Descripción de la imagen 2">
+        </div>
+        <div class="image">
+            <img class="imagenes-restaurantes" src="../imagenes/foto-malaga-larios3.webp" alt="Descripción de la imagen 2">
+          </div>
+      </div>
+      
+
+<footer>
+    <div class="footer-content">
+        <ul class="footer-links">
+            <li><p>Sergio Cabrera</p></li>
+            <li><a href="#"><p>Administracion Central</p></a></li>
+          </ul>
+      <ul class="footer-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Acerca de nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="https://www.facebook.com/blockhouseES/"><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" fill="white"></path> </svg>
+        </a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+</body>
+</html>

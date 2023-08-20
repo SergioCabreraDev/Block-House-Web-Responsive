@@ -276,6 +276,73 @@ h1{
     background-color: white; /* Ajusta el fondo según tus necesidades */
     z-index: 1; /* Asegúrate de que el contenido esté en un nivel superior */
   }
+   
+  /* MALAGA LARIOS */
+  .titulo-larios{
+    padding-top: 0%;
+    font-family: 'ImpressumStd-Roman';
+    text-align: center;
+    font-size: 35px;
+  }
+
+  #contenedor-larios{
+    display: flex;
+    margin-top: 3%;
+    justify-content: center;
+    gap: 5%;
+    font-family: 'Overpass-Regular';
+    background-color: #ffffff;
+  }
+
+  .foto-encargado{
+    width: 110%;
+  }
+
+  .foto-encargado-sandra{
+    width: 80%;
+  }
+  .foto-encargado-franzi{
+    width: 95%;
+  }
+
+
+  #direccion-mapa{
+    display: flex;
+  }
+
+  #horarios1{
+  display: none;
+  }
+
+  .parrafo-direccion{
+    padding-right: 1%;
+  }
+
+
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2%;
+  }
+
+  .image {
+    margin: 10px;
+  }
+
+  .image img {
+    margin-top: 5%;
+    width: 500px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: auto;
+  }
+  .imagenes-restaurantes{
+    transition: transform 0.3s ease;
+  }
+
+  .imagenes-restaurantes:hover {
+    transform: scale(1.1); /* Ajusta el valor según el grado de agrandamiento deseado */
+  }
   
 /* Declara la fuente personalizada */
 @font-face {
@@ -591,6 +658,140 @@ h1{
     top: 0; /* Mantén el contenido pegado en la parte superior */
     background-color: white; /* Ajusta el fondo según tus necesidades */
     z-index: 1; /* Asegúrate de que el contenido esté en un nivel superior */
+  }
+
+
+  /* MALAGA LARIOS */
+  .titulo-larios{
+    padding-top: 0%;
+    font-family: 'ImpressumStd-Roman';
+    text-align: center;
+    font-size: 35px;
+  }
+
+  #contenedor-larios{
+    display: flex;
+    margin-top: 3%;
+    justify-content: center;
+    gap: 90px;
+    font-family: 'Overpass-Regular';
+    background-color: #ffffff;
+  }
+
+  .foto-encargado{
+    width: 110%;
+  }
+
+  .foto-encargado-sandra{
+    width: 80%;
+  }
+  .foto-encargado-franzi{
+    width: 95%;
+  }
+
+
+  #direccion-mapa{
+    display: flex;
+  }
+
+  #horarios{
+
+  }
+
+  .parrafo-direccion{
+    padding-right: 1%;
+  }
+
+
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2%;
+  }
+
+  .image {
+    margin: 10px;
+  }
+
+  .image img {
+    margin-top: 5%;
+    width: 500px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: auto;
+  }
+  .imagenes-restaurantes{
+    transition: transform 0.3s ease;
+  }
+
+  .imagenes-restaurantes:hover {
+    transform: scale(1.1); /* Ajusta el valor según el grado de agrandamiento deseado */
+  }
+   /* MALAGA LARIOS */
+   .titulo-larios{
+    padding-top: 0%;
+    font-family: 'ImpressumStd-Roman';
+    text-align: center;
+    font-size: 35px;
+  }
+
+  #contenedor-larios{
+    display: flex;
+    margin-top: 3%;
+    justify-content: center;
+    gap: 5%;
+    font-family: 'Overpass-Regular';
+    background-color: #ffffff;
+  }
+
+  .foto-encargado{
+    width: 110%;
+  }
+
+  .foto-encargado-sandra{
+    width: 80%;
+  }
+  .foto-encargado-franzi{
+    width: 95%;
+  }
+
+
+  #direccion-mapa{
+    display: flex;
+  }
+
+  #horarios1{
+  display: none;
+  }
+
+  .parrafo-direccion{
+    padding-right: 1%;
+  }
+
+
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2%;
+  }
+
+  .image {
+    margin: 10px;
+  }
+
+  .image img {
+    margin-top: 5%;
+    width: 500px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: auto;
+  }
+  .imagenes-restaurantes{
+    transition: transform 0.3s ease;
+  }
+
+  .imagenes-restaurantes:hover {
+    transform: scale(1.1); /* Ajusta el valor según el grado de agrandamiento deseado */
   }
   
 /* Declara la fuente personalizada */
