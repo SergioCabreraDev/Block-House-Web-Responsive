@@ -13,7 +13,7 @@
   
   
   .nav{
-    background-color: #fafafa;
+    background-color: #ececec;
   
       --img1: scale(1);
       --img2: scale(0);
@@ -320,16 +320,22 @@
   }
   #foto-nombre{
     display: flex;
-    gap: 5%;
+    gap: 3%;
     justify-content: center;
    
     padding: 5%;
   }
+  .foto-encargado-patricia{
+    width: 50%;
+  }
   .foto-encargado-sandra{
-    width: 80%;
+    width: 90%;
   }
   .foto-encargado-franzi{
-    width: 95%;
+    width: 45%;
+  }
+  .foto-encargado-xisco{
+    width: 100%;
   }
 
 
