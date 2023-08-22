@@ -2,44 +2,82 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagenes/bh-favicon.ico"/>
-    <link rel="stylesheet" href="../../assets/style1.css">
+    <link rel="stylesheet" href="../../css/estilo-movil.css">
+    <link rel="stylesheet" href="../../css/estilo-tablet.css">
+    <link rel="stylesheet" href="../../css/estilo-pc.css">
 
     <title>Block House - Best Steaks since 1968</title>
 </head>
 <body>
     <div class="superior">
-    <div class="container">
-        <div class="navbar">
-            <a href="../../index.html" class="navbar-brand"><img class="logo-navbar" src="../../imagenes/logonavbar.png" alt=""></a>
-            <ul class="navbar-menu">
-                <li class="navbar-item dropdown">
-                    <a href="#" class="navbar-link">RESTAURANTES Y HORARIOS</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="../../Restaurantes/malaga-larios.html" class="dropdown-link">Málaga Larios</a></li>
-                        <li><a href="../../Restaurantes/malaga-plaza-mayor.html" class="dropdown-link">Málaga Plaza Mayor</a></li>
-                        <li><a href="../../Restaurantes/marbella.html" class="dropdown-link">Marbella</a></li>
-                        <li><a href="../../Restaurantes/Palma.html" class="dropdown-link">Palma</a></li>
-                        <li><a href="../../Restaurantes/SantaPonsa.html" class="dropdown-link">Santa Ponsa</a></li>
-                        <li><a href="../../Restaurantes/FestivalPark.html" class="dropdown-link">Festival Park</a></li>
-                        <li><a href="../../Restaurantes/PortoPi.html" class="dropdown-link">Porto Pi</a></li>
-                        <!-- Agrega más opciones de reserva según necesites -->
-                    </ul>
-                </li>
-                <li class="navbar-item dropdown">
-                    <a href="../../Pide_Para_Llevar/pide-para-llevar.html" class="navbar-link">PIDE PARA LLEVAR</a>
-                </li>
-                <li class="navbar-item dropdown">
-                    <a href="#" class="navbar-link">CARTA</a>
-                </li>
-                <li class="navbar-item dropdown">
-                    <a href="#" class="navbar-link">INICIAR SESION</a>
-                </li>
-            </ul>
-        </div>
-        
-        </div>
+        <nav class="nav">
+
+            <div class="nav__container">
+    
+                <a href="#"><img class="nav__title" src="../../assets/logonavbar.png" alt=""></a>
+    
+                <a href="#menu" class="nav__menu">
+                    <img src="../../assets/menu-icon.svg" class="nav__icon">
+                </a>
+    
+                <a href="#" class="nav__menu nav__menu--second">
+                    <img src="../../assets/close.svg" class="nav__icon ">
+                </a>
+    
+                <ul class="dropdown" id="menu">
+    
+                    <li class="dropdown__list">
+                        <a href="#" class="dropdown__link">
+                            <span class="dropdown__span"><B>RESTAURANTES Y HORARIOS</B></span>
+                            <img src="../../assets/down.svg" class="dropdown__arrow">
+    
+                            <input type="checkbox" class="dropdown__check">
+                        </a>
+    
+                        <div class="dropdown__content">
+    
+                            <ul class="dropdown__sub">
+                                <li class="dropdown__li"><a href="../../Restaurantes/malaga-larios.html" class="dropdown__anchor">Málaga Larios</a></li>
+                                <li class="dropdown__li"><a href="../../Restaurantes/malaga-plaza-mayor.html" class="dropdown__anchor">Málaga Plaza Mayor</a></li>
+                                <li class="dropdown__li"><a href="../../Restaurantes/marbella.html" class="dropdown__anchor">Marbella</a></li>
+                                <li class="dropdown__li"><a href="../../Restaurantes/Palma.html" class="dropdown__anchor">Palma</a></li>
+                                <li class="dropdown__li"><a href="../../Restaurantes/SantaPonsa.html" class="dropdown__anchor">Santa Ponsa</a></li>
+                                <li class="dropdown__li"><a href="../../Restaurantes/FestivalPark.html" class="dropdown__anchor">Festival Park</a></li>
+                                <li class="dropdown__li"><a href="../../Restaurantes/PortoPi.html" class="dropdown__anchor">Porto Pi</a></li>
+                            </ul>
+    
+                        </div>
+                    </li>
+    
+                    <li class="dropdown__list">
+                        <a href="../../ParaLLevar/pide-para-llevar.html" class="dropdown__link">
+                            <span class="dropdown__span"><B>PIDE PARA LLEVAR</B></span>
+                        </a>
+                    </li>
+    
+                    
+    
+                    <li class="dropdown__list">
+                        <a href="../cartas.html" class="dropdown__link">
+                            <span class="dropdown__span"><B>CARTA</B></span>
+    
+                        </a>
+                    </li>
+    
+                    <li class="dropdown__list">
+                        <a href="#" class="dropdown__link">
+                            <span class="dropdown__span"><B>INICIAR SESION</B></span>
+                        </a>
+                    </li>
+    
+                </ul>
+    
+            </div>
+    
+        </nav>
         </div> 
               
  <center>

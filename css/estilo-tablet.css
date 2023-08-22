@@ -314,6 +314,7 @@
     gap: 20px;
     font-family: 'Overpass-Regular';
     background-color: #ffffff;
+    font-size: 20px;
   }
 
   .foto-encargado{
@@ -336,6 +337,8 @@
 
   #direccion-mapa{
     display: flex;
+    flex-direction: column;
+   
   }
 
   #horarios{
@@ -344,7 +347,10 @@
 
   .parrafo-direccion{
     padding-right: 1%;
-    text-align: right;
+    text-align: center;
+  }
+  .maps{
+    width: 100%;
   }
 
 
@@ -432,18 +438,18 @@
   .titulocartas{
     padding-top: 1%;
     font-family: 'ImpressumStd-Roman';
-    font-size: 35px;
+    font-size: 39px;
   }
 
   #contenedor-de-cartas {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 6%;
+    margin: 1%;
     color: white;
     font-family: 'Overpass-Regular';
     padding-bottom: 80%;
-    font-size: 140%;
+    font-size: 160%;
   }
   
   .cartademenu,
@@ -503,7 +509,8 @@
     font-family: 'Overpass-Regular';
     margin-left: 7%;
     margin-right: 7%;
-    font-size: 20px
+    margin-bottom: 7%;
+    font-size: 23px
   }
   .linkcartas {
     color: white;
@@ -511,49 +518,51 @@
   }
 
   .cartamenuimg{
-    padding-top: 7%;
-  }
-  .cartamenuimgvino{
-    padding-top: 7%;
-    width: 35%;
-    padding-bottom: 2%;
+width: 100%;
+
   }
 
+  .cartamenuimgvino{
+    width: 100%;
+    margin-bottom: 6%;
+  }
+
+
+
   #contenido-grupos{
-    margin:10% 20%;
+    margin:5% 10%;
     font-family: 'Overpass-Regular';
   }
   .texto-grupos{
     padding: 5%;
     background-color: #dfdddd;
-    font-size: 18px;
+    font-size: 26px;
   }
   .lista-menus{
-    margin-top: 2%;
+    margin-top: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 7%;
+    font-size: 20px;
+    gap: 2%;
+    text-align: center;
     
     
   }
   .menus{
-    padding: 4% 7%;
-    background-image: url('../imagenes/menu.webp');
+    padding: 6% 10%;
+    background-color: #f1f1f1;
+    border: 1px solid #000000;
     border-radius: 2%;
     font-weight: bolder;
-    background-size: cover; /* La imagen se ajustará al tamaño del div */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center; /* Centra la imagen dentro del div */
-    background-size: cover;
     background-position: center;
     transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
-    color: white; 
+    color:white;
     
   }
 
   .linkmenu {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     /* Puedes añadir otros estilos aquí si es necesario */
   }
     .menus:hover{
@@ -561,8 +570,8 @@
     }
 
     .cartamenugrupo{
-      margin-top: 7%;
-      width: 50%;
+ 
+      width: 100%;
     }
     /* Declara la fuente personalizada */
   @font-face {

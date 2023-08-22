@@ -421,17 +421,7 @@ width: 100%;
     font-size: 30px;
     margin-bottom: 5%;
   }
-  #contenedor-de-cartas {
-    margin-top: 15%;
-    margin-bottom: 15%; /* Ajusta este valor según tus necesidades */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; /* Centra horizontalmente los elementos */
-    font-family: 'ImpressumStd-Roman';
-    font-size: 17px;
-    
-}
+  
 .cartamenuimg{
  width: 100%;
 
@@ -440,7 +430,17 @@ width: 100%;
   width: 100%;
   margin-bottom: 85%;
  }
-
+ #contenedor-de-cartas {
+  margin-top: 15%;
+  margin-bottom: 15%; /* Ajusta este valor según tus necesidades */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centra horizontalmente los elementos */
+  font-family: 'ImpressumStd-Roman';
+  font-size: 17px;
+  
+}
 #contenedor-de-cartas > div {
   margin-bottom: 1.5em; /* Agrega espacio entre los divs */
 }
@@ -494,7 +494,51 @@ border-radius: 5px;
   margin-right: 3%;
   font-size: 20px
 }
+#contenido-grupos{
+  margin:5% 2%;
+  font-family: 'Overpass-Regular';
+}
+.texto-grupos{
+  padding: 5%;
+  background-color: #dfdddd;
+  font-size: 15px;
+}
+.lista-menus{
+  margin-top: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  gap: 2%;
+  text-align: center;
   
+  
+}
+.menus{
+  padding: 2% 5%;
+  background-color: #f1f1f1;
+  border: 1px solid #000000;
+  border-radius: 2%;
+  font-weight: bolder;
+  background-position: center;
+  transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+  color:white;
+  margin-bottom: 15%;
+  
+}
+
+.linkmenu {
+  color: rgb(0, 0, 0);
+  /* Puedes añadir otros estilos aquí si es necesario */
+}
+  .menus:hover{
+    transform: scale(1.1); /* Al pasar el ratón, hacemos un efecto de escala para aumentar el tamaño */ 
+  }
+
+  .cartamenugrupo{
+
+    width: 100%;
+  }
 
   /* Declara la fuente personalizada */
 @font-face {
