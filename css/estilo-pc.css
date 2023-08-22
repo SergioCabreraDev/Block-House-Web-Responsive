@@ -371,6 +371,159 @@ h1{
     color: black;
     transition: background-color 0.3s, color 0.3s;
   }
+  .titulocartas{
+    padding-top: 1%;
+    font-family: 'ImpressumStd-Roman';
+    font-size: 35px;
+  }
+
+  #contenedor-de-cartas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    margin: 6%;
+    color: white;
+    font-family: 'Overpass-Regular';
+    padding-bottom: 9%;
+
+  }
+  .cartademenu{
+  padding: 6%;
+  background-image: url('../imagenes/menu.webp'); /* Ruta de la imagen que deseas usar */
+  background-size: cover; /* La imagen se ajustará al tamaño del div */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen dentro del div */
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+  }
+  .cartademenu:hover{
+    transform: scale(1.1); /* Al pasar el ratón, hacemos un efecto de escala para aumentar el tamaño */ 
+  }
+  .postres{
+    padding: 6%;
+    background-image: url('../imagenes/postres.webp'); /* Ruta de la imagen que deseas usar */
+    background-size: cover; /* La imagen se ajustará al tamaño del div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del div */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+    }
+    .postres:hover{
+      transform: scale(1.1); /* Al pasar el ratón, hacemos un efecto de escala para aumentar el tamaño */ 
+    }
+
+  .cartaniños{
+    padding: 6%;
+    background-image: url('../imagenes/niños.webp'); /* Ruta de la imagen que deseas usar */
+    background-size: cover; /* La imagen se ajustará al tamaño del div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del div */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+    }
+    .cartaniños:hover{
+      transform: scale(1.1); /* Al pasar el ratón, hacemos un efecto de escala para aumentar el tamaño */ 
+    }
+
+  .nuestrosvinos{
+    padding: 6%;
+    background-image: url('../imagenes/vinos.webp'); /* Ruta de la imagen que deseas usar */
+    background-size: cover; /* La imagen se ajustará al tamaño del div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del div */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+    }
+    .nuestrosvinos:hover{
+      transform: scale(1.1); /* Al pasar el ratón, hacemos un efecto de escala para aumentar el tamaño */ 
+    }
+    .menugrupo{
+    margin-left: 30%;
+    margin-right: 30%;
+      padding: 6%;
+      background-image: url('../imagenes/vinos.webp'); /* Ruta de la imagen que deseas usar */
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
+      background-position: center; /* Centra la imagen dentro del div */
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+      }
+
+  .frasecarta{
+    font-family: 'Overpass-Regular';
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size: 20
+    px;
+  }
+  .linkcartas {
+    color: white;
+    text-decoration: none; /* Opcional: para quitar el subrayado de los enlaces */
+  }
+
+  .cartamenuimg{
+    padding-top: 7%;
+  }
+  .cartamenuimgvino{
+    padding-top: 7%;
+    width: 35%;
+    padding-bottom: 2%;
+  }
+
+  #contenido-grupos{
+    margin:10% 20%;
+    font-family: 'Overpass-Regular';
+  }
+  .texto-grupos{
+    padding: 5%;
+    background-color: #dfdddd;
+    font-size: 18px;
+  }
+  .lista-menus{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    
+    
+  }
+  .menus{
+    padding: 4% 7%;
+    background-image: url('../imagenes/menu.webp');
+    border-radius: 2%;
+    font-weight: bolder;
+    background-size: cover; /* La imagen se ajustará al tamaño del div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del div */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+    color: white; 
+    
+  }
+
+  .linkmenu {
+    color: rgb(255, 255, 255);
+    /* Puedes añadir otros estilos aquí si es necesario */
+  }
+    .menus:hover{
+      transform: scale(1.1); /* Al pasar el ratón, hacemos un efecto de escala para aumentar el tamaño */ 
+    }
+
+    .cartamenugrupo{
+      margin-top: 7%;
+      width: 50%;
+    }
+
+    .margenes-login{
+      margin: 4%;
+    }
   
 /* Declara la fuente personalizada */
 @font-face {
@@ -850,6 +1003,159 @@ h1{
     color: black;
     transition: background-color 0.3s, color 0.3s;
   }
+  .titulocartas{
+    padding-top: 1%;
+    font-family: 'ImpressumStd-Roman';
+    font-size: 35px;
+  }
+
+  #contenedor-de-cartas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    margin: 6%;
+    color: white;
+    font-family: 'Overpass-Regular';
+    padding-bottom: 9%;
+
+  }
+  .cartademenu{
+  padding: 6%;
+  background-image: url('../imagenes/menu.webp'); /* Ruta de la imagen que deseas usar */
+  background-size: cover; /* La imagen se ajustará al tamaño del div */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen dentro del div */
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+  }
+  .cartademenu:hover{
+    transform: scale(1.1); /* Al pasar el ratón, hacemos un efecto de escala para aumentar el tamaño */ 
+  }
+  .postres{
+    padding: 7%;
+    background-image: url('../imagenes/postres.webp'); /* Ruta de la imagen que deseas usar */
+    background-size: cover; /* La imagen se ajustará al tamaño del div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del div */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+    }
+    .postres:hover{
+      transform: scale(1.1); /* Al pasar el ratón, hacemos un efecto de escala para aumentar el tamaño */ 
+    }
+
+  .cartaniños{
+    padding: 6%;
+    background-image: url('../imagenes/niños.webp'); /* Ruta de la imagen que deseas usar */
+    background-size: cover; /* La imagen se ajustará al tamaño del div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del div */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+    }
+    .cartaniños:hover{
+      transform: scale(1.1); /* Al pasar el ratón, hacemos un efecto de escala para aumentar el tamaño */ 
+    }
+
+  .nuestrosvinos{
+    padding: 6%;
+    background-image: url('../imagenes/vinos.webp'); /* Ruta de la imagen que deseas usar */
+    background-size: cover; /* La imagen se ajustará al tamaño del div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del div */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+    }
+    .nuestrosvinos:hover{
+      transform: scale(1.1); /* Al pasar el ratón, hacemos un efecto de escala para aumentar el tamaño */ 
+    }
+    .menugrupo{
+    margin-left: 30%;
+    margin-right: 30%;
+      padding: 6%;
+      background-image: url('../imagenes/vinos.webp'); /* Ruta de la imagen que deseas usar */
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
+      background-position: center; /* Centra la imagen dentro del div */
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+      }
+
+  .frasecarta{
+    font-family: 'Overpass-Regular';
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size: 20
+    px;
+  }
+  .linkcartas {
+    color: white;
+    text-decoration: none; /* Opcional: para quitar el subrayado de los enlaces */
+  }
+
+  .cartamenuimg{
+    padding-top: 7%;
+  }
+  .cartamenuimgvino{
+    padding-top: 7%;
+    width: 35%;
+    padding-bottom: 2%;
+  }
+
+  #contenido-grupos{
+    margin:10% 20%;
+    font-family: 'Overpass-Regular';
+  }
+  .texto-grupos{
+    padding: 5%;
+    background-color: #dfdddd;
+    font-size: 18px;
+  }
+  .lista-menus{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    
+    
+  }
+  .menus{
+    padding: 4% 7%;
+    background-image: url('../imagenes/menu.webp');
+    border-radius: 2%;
+    font-weight: bolder;
+    background-size: cover; /* La imagen se ajustará al tamaño del div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del div */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+    color: white; 
+    
+  }
+
+  .linkmenu {
+    color: rgb(255, 255, 255);
+    /* Puedes añadir otros estilos aquí si es necesario */
+  }
+    .menus:hover{
+      transform: scale(1.1); /* Al pasar el ratón, hacemos un efecto de escala para aumentar el tamaño */ 
+    }
+
+    .cartamenugrupo{
+      margin-top: 7%;
+      width: 50%;
+    }
+
+    .margenes-login{
+      margin: 4%;
+    }
 /* Declara la fuente personalizada */
 @font-face {
   font-family: 'Clarendon-Serial-Heavy';

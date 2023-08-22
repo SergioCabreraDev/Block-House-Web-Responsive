@@ -415,6 +415,87 @@ width: 100%;
     color: black;
     transition: background-color 0.3s, color 0.3s;
   }
+  .titulocartas{
+    padding-top: 1%;
+    font-family: 'ImpressumStd-Roman';
+    font-size: 30px;
+    margin-bottom: 5%;
+  }
+  #contenedor-de-cartas {
+    margin-top: 15%;
+    margin-bottom: 15%; /* Ajusta este valor según tus necesidades */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centra horizontalmente los elementos */
+    font-family: 'ImpressumStd-Roman';
+    font-size: 17px;
+    
+}
+.cartamenuimg{
+ width: 100%;
+
+}
+.cartamenuimgvino{
+  width: 100%;
+  margin-bottom: 85%;
+ }
+
+#contenedor-de-cartas > div {
+  margin-bottom: 1.5em; /* Agrega espacio entre los divs */
+}
+
+.cartademenu{
+padding: 0.75em 3em;
+border: 2px solid rgb(0, 0, 0);
+border-radius: 5px;
+}
+
+.postres{
+padding: 0.75em 2em;
+border: 2px solid rgb(0, 0, 0);
+border-radius: 5px;
+}
+
+.cartaniños{
+padding: 0.75em 1em;
+border: 2px solid rgb(0, 0, 0);
+border-radius: 5px;
+}
+
+.nuestrosvinos{
+padding: 0.75em 3em;
+border: 2px solid rgb(0, 0, 0);
+border-radius: 5px;
+}
+
+
+.linkcartas{
+  text-decoration: none; /* Opcional: para quitar el subrayado de los enlaces */
+  color: rgb(0, 0, 0);
+  
+  
+}
+.menugrupo{
+  margin-left: 30%;
+  margin-right: 30%;
+    padding: 6%;
+    background-image: url('../imagenes/vinos.webp'); /* Ruta de la imagen que deseas usar */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del div */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+    }
+
+.frasecarta{
+  font-family: 'Overpass-Regular';
+  margin-left: 3%;
+  margin-right: 3%;
+  font-size: 20px
+}
+  
+
   /* Declara la fuente personalizada */
 @font-face {
   font-family: 'Clarendon-Serial-Heavy';

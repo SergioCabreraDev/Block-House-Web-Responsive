@@ -401,6 +401,169 @@
     color: black;
     transition: background-color 0.3s, color 0.3s;
   }
+  #formulario-takeaway{
+    margin: 10% 27%;
+    padding: 7%;
+    background-image: url('../imagenes/photo1690807460\ \(2\).webp'); /* Ruta de la imagen que deseas usar */
+    background-size: cover; /* La imagen se ajustará al tamaño del div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del div */
+  border-radius: 2%;
+  color: white;
+  font-size: 20px;
+  font-family: 'Overpass-Regular';
+  }
+  .button-takeaway{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px; /* Ajusta el valor para redondear más o menos los bordes */
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .button-takeaway:hover{
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .titulocartas{
+    padding-top: 1%;
+    font-family: 'ImpressumStd-Roman';
+    font-size: 35px;
+  }
+
+  #contenedor-de-cartas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6%;
+    color: white;
+    font-family: 'Overpass-Regular';
+    padding-bottom: 80%;
+    font-size: 140%;
+  }
+  
+  .cartademenu,
+  .postres,
+  .cartaniños,
+  .nuestrosvinos {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .cartademenu {
+    width: 25%; /* Ajustar el ancho según tu preferencia */
+    background-image: url('../imagenes/menu.webp');
+  }
+  
+  .postres {
+    width: 25%; /* Ajustar el ancho según tu preferencia */
+    background-image: url('../imagenes/postres.webp');
+  }
+  
+  .cartaniños {
+    width: 25%; /* Ajustar el ancho según tu preferencia */
+    background-image: url('../imagenes/niños.webp');
+  }
+  
+  .nuestrosvinos {
+    width: 25%; /* Ajustar el ancho según tu preferencia */
+    background-image: url('../imagenes/vinos.webp');
+  }
+  
+  .cartademenu:hover,
+  .postres:hover,
+  .cartaniños:hover,
+  .nuestrosvinos:hover {
+    transform: scale(1.1);
+  }
+  
+    .menugrupo{
+    margin-left: 30%;
+    margin-right: 30%;
+      padding: 6%;
+      background-image: url('../imagenes/vinos.webp'); /* Ruta de la imagen que deseas usar */
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
+      background-position: center; /* Centra la imagen dentro del div */
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+      }
+
+  .frasecarta{
+    font-family: 'Overpass-Regular';
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size: 20px
+  }
+  .linkcartas {
+    color: white;
+    text-decoration: none; /* Opcional: para quitar el subrayado de los enlaces */
+  }
+
+  .cartamenuimg{
+    padding-top: 7%;
+  }
+  .cartamenuimgvino{
+    padding-top: 7%;
+    width: 35%;
+    padding-bottom: 2%;
+  }
+
+  #contenido-grupos{
+    margin:10% 20%;
+    font-family: 'Overpass-Regular';
+  }
+  .texto-grupos{
+    padding: 5%;
+    background-color: #dfdddd;
+    font-size: 18px;
+  }
+  .lista-menus{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    
+    
+  }
+  .menus{
+    padding: 4% 7%;
+    background-image: url('../imagenes/menu.webp');
+    border-radius: 2%;
+    font-weight: bolder;
+    background-size: cover; /* La imagen se ajustará al tamaño del div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del div */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+    color: white; 
+    
+  }
+
+  .linkmenu {
+    color: rgb(255, 255, 255);
+    /* Puedes añadir otros estilos aquí si es necesario */
+  }
+    .menus:hover{
+      transform: scale(1.1); /* Al pasar el ratón, hacemos un efecto de escala para aumentar el tamaño */ 
+    }
+
+    .cartamenugrupo{
+      margin-top: 7%;
+      width: 50%;
+    }
     /* Declara la fuente personalizada */
   @font-face {
     font-family: 'Clarendon-Serial-Heavy';
