@@ -321,10 +321,11 @@
   }
   #foto-nombre{
     display: flex;
-    gap: 30%;
+    gap: 20%;
     justify-content: center;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
   }
+  
   .foto-encargado-sandra{
     width: 80%;
   }
@@ -343,6 +344,7 @@
 
   .parrafo-direccion{
     padding-right: 1%;
+    text-align: right;
   }
 
 
@@ -360,7 +362,7 @@
 
   .image img {
     margin-top: 5%;
-    width: 500px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    width: 700px; /* Ajusta el tamaño de la imagen según tus necesidades */
     height: auto;
   }
   .imagenes-restaurantes{
@@ -369,6 +371,35 @@
 
   .imagenes-restaurantes:hover {
     transform: scale(1.1); /* Ajusta el valor según el grado de agrandamiento deseado */
+  }
+  #formulario-takeaway{
+    margin: 10% 8%;
+    margin-bottom: 35%;
+    padding: 7%;
+    background-image: url('../imagenes/photo1690807460\ \(2\).webp'); /* Ruta de la imagen que deseas usar */
+    background-size: cover; /* La imagen se ajustará al tamaño del div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del div */
+  border-radius: 2%;
+  color: white;
+  font-size: 23px;
+  font-family: 'Overpass-Regular';
+  }
+  .button-takeaway{
+    display: inline-block;
+    padding: 13px 32px;
+    border: 2px solid white;
+    border-radius: 5px; /* Ajusta el valor para redondear más o menos los bordes */
+    background-color: transparent;
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+  }
+
+  .button-takeaway:hover{
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
   }
     /* Declara la fuente personalizada */
   @font-face {

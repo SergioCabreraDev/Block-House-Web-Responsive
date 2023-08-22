@@ -384,6 +384,37 @@ width: 100%;
   .imagenes-restaurantes:hover {
     transform: scale(1.1); /* Ajusta el valor según el grado de agrandamiento deseado */
   }
+
+    #formulario-takeaway{
+    margin: 10% 2%;
+    margin-bottom: 55%;
+    padding: 7%;
+    background-image: url('../imagenes/photo1690807460\ \(2\).webp'); /* Ruta de la imagen que deseas usar */
+    background-size: cover; /* La imagen se ajustará al tamaño del div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del div */
+  border-radius: 2%;
+  color: white;
+  font-size: 19px;
+  font-family: 'Overpass-Regular';
+  }
+  .button-takeaway{
+    display: inline-block;
+    padding: 16px 32px;
+    border: 2px solid white;
+    border-radius: 5px; /* Ajusta el valor para redondear más o menos los bordes */
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    margin-top: 10%;
+    cursor: pointer;
+  }
+
+  .button-takeaway:hover{
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+  }
   /* Declara la fuente personalizada */
 @font-face {
   font-family: 'Clarendon-Serial-Heavy';
