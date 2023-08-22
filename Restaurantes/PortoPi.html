@@ -11,48 +11,100 @@
 </head>
 <body>
     <div class="superior">
-        <div class="container">
-            <div class="navbar">
-                <a href="#" class="navbar-brand"><img class="logo-navbar" src="../imagenes/logonavbar.png" alt=""></a>
-                <ul class="navbar-menu">
-                    <li class="navbar-item dropdown">
-                        <a href="#" class="navbar-link">RESTAURANTES Y HORARIOS</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../Restaurantes/malaga-larios.html" class="dropdown-link">Málaga Larios</a></li>
-                            <li><a href="../Restaurantes/malaga-plaza-mayor.html" class="dropdown-link">Málaga Plaza Mayor</a></li>
-                            <li><a href="../Restaurantes/marbella.html" class="dropdown-link">Marbella</a></li>
-                            <li><a href="../Restaurantes/Palma.html" class="dropdown-link">Palma</a></li>
-                            <li><a href="../Restaurantes/SantaPonsa.html" class="dropdown-link">Santa Ponsa</a></li>
-                            <li><a href="../Restaurantes/FestivalPark.html" class="dropdown-link">Festival Park</a></li>
-                            <li><a href="../Restaurantes/PortoPi.html" class="dropdown-link">Porto Pi</a></li>
-                            <!-- Agrega más opciones de reserva según necesites -->
-                        </ul>
+        <nav class="nav">
+    
+            <div class="nav__container">
+    
+                <a href="../index.html"><img class="nav__title" src="../assets/logonavbar.png" alt=""></a>
+    
+                <a href="#menu" class="nav__menu">
+                    <img src="../assets/menu-icon.svg" class="nav__icon">
+                </a>
+    
+                <a href="#" class="nav__menu nav__menu--second">
+                    <img src="../assets/close.svg" class="nav__icon ">
+                </a>
+    
+                <ul class="dropdown" id="menu">
+    
+                    <li class="dropdown__list">
+                        <a href="#" class="dropdown__link">
+                            <span class="dropdown__span"><B>RESTAURANTES Y HORARIOS</B></span>
+                            <img src="../assets/down.svg" class="dropdown__arrow">
+    
+                            <input type="checkbox" class="dropdown__check">
+                        </a>
+    
+                        <div class="dropdown__content">
+    
+                            <ul class="dropdown__sub">
+                                <li class="dropdown__li"><a href="../Restaurantes/malaga-larios.html" class="dropdown__anchor">Málaga Larios</a></li>
+                                <li class="dropdown__li"><a href="../Restaurantes/malaga-plaza-mayor.html" class="dropdown__anchor">Málaga Plaza Mayor</a></li>
+                                <li class="dropdown__li"><a href="../Restaurantes/marbella.html" class="dropdown__anchor">Marbella</a></li>
+                                <li class="dropdown__li"><a href="../Restaurantes/Palma.html" class="dropdown__anchor">Palma</a></li>
+                                <li class="dropdown__li"><a href="../Restaurantes/SantaPonsa.html" class="dropdown__anchor">Santa Ponsa</a></li>
+                                <li class="dropdown__li"><a href="../Restaurantes/FestivalPark.html" class="dropdown__anchor">Festival Park</a></li>
+                                <li class="dropdown__li"><a href="../Restaurantes/PortoPi.html" class="dropdown__anchor">Porto Pi</a></li>
+                            </ul>
+    
+                        </div>
                     </li>
-                    <li class="navbar-item dropdown">
-                        <a href="#" class="navbar-link">PIDE PARA LLEVAR</a>
+    
+                    <li class="dropdown__list">
+                        <a href="../Pide_Para_Llevar/pide-para-llevar.html" class="dropdown__link">
+                            <span class="dropdown__span"><B>PIDE PARA LLEVAR</B></span>
+                        </a>
                     </li>
-                    <li class="navbar-item dropdown">
-                        <a href="#" class="navbar-link">CARTA DE MENU</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#" class="dropdown-link">Opción 1</a></li>
-                            <li><a href="#" class="dropdown-link">Opción 2</a></li>
-                            <!-- Agrega más opciones para pedir para llevar -->
-                        </ul>
+    
+                    
+    
+                    <li class="dropdown__list">
+                        <a href="#" class="dropdown__link">
+                            <span class="dropdown__span"><B>CARTA</B></span>
+    
+                        </a>
                     </li>
-                    <li class="navbar-item dropdown">
-                        <a href="#" class="navbar-link">INICIAR SESION</a>
+    
+                    <li class="dropdown__list">
+                        <a href="#" class="dropdown__link">
+                            <span class="dropdown__span"><B>INICIAR SESION</B></span>
+                        </a>
                     </li>
+    
                 </ul>
+    
             </div>
     
-            
-            <center>
-                <div class="novedades">
-                <b><p class="avisos">🢚 En este restaurante, 2 horas de parking gratuito!
-                    Domingos y festivos gratis todo el día! 🢘</p></b>
-                </div>
-            </div>
-            </div> 
+        </nav>
+        <center>
+                
+            <form class="formulario-reserva" action="/ruta/del/servidor" method="POST">
+                
+             <b>   <label class="label-reserva" for="campo1">RESTAURANTE:</label>
+                <select class="input-reserva" name="campo1">
+                    <option value="" disabled selected>Selecciona un restaurante</option>
+                    <option value="opcion1">Málaga Larios</option>
+                    <option value="opcion2">Málaga Plaza Mayor</option>
+                    <option value="opcion3">Marbella</option>
+                    <option value="opcion4">Palma</option>
+                    <option value="opcion5">Santa Ponsa</option>
+                    <option value="opcion6">Festival Park</option>
+                    <option value="opcion7">Porto Pi</option>
+                    <!-- Agrega más opciones según tus necesidades -->
+                </select>                
+    
+                  <label class="label-reserva" for="campo2">FECHA:</label>
+                  <input class="input-reserva" type="date" id="campo2" name="campo2"  placeholder="Selecciona una fecha">
+    
+                <label class="label-reserva" for="campo3">PERSONAS:</label>
+                <input class="input-reserva" type="number" id="campo3" name="campo3" placeholder="Numero de Personas">
+    
+                <button class="button-reserva" type="submit"><b>RESERVAR</b></button></b>
+            </form>
+         
+        </div> 
+        </div>
+        </div> 
    
 
 
