@@ -15,7 +15,7 @@
 
         <div class="nav__container">
 
-            <a href="#"><img class="nav__title" src="./assets/logonavbar.png" alt=""></a>
+            <a href="index.html"><img class="nav__title" src="./assets/logonavbar.png" alt=""></a>
 
             <a href="#menu" class="nav__menu">
                 <img src="./assets/menu-icon.svg" class="nav__icon">
@@ -106,96 +106,79 @@
 
             <button class="button-reserva" type="submit"><b>RESERVAR</b></button></b>
         </form>
-        <div class="novedades">
-        <b><p class="avisos"> Esta disponible "take away" en algunos restaurantes. Detalles en "Pide para llevar" </p></b>
-        </div>
+
     </div> 
     </div>
     </div> 
     </center>
-    <center>
-        <div class="video-container">
-            <h1 class="titulo">BLOCK HOUSE</h1>
-            <div id="video">
-                <video width="100%" playsinline autoplay loop muted>
-                  <source src="./video/video_web.mp4" type="video/mp4">
-                </video>
-        </div>
-        </center>
 
-        <div id="contenido">
-
-            <div class="bloques">
-                <div class="bloque1">
-                    <div class="textobloque1">
-                        <h2>CALIDAD EN ELABORACIÓN</h2>
-                        <p>Nuestro equipo de cocina está perfectamente formado, ya que su trabajo no es nada fácil.
-                            Imagínate tener que parrillar tantos Steaks diferentes con acabados distintos en una parrilla de lava que alcanza los 400ºC. Algunos rojos, otros medium o muy hechos, grandes, pequeños, con o sin hueso.
-                            Y todo ello de tal forma que los comensales de una mesa puedan disfrutar de sus carnes en el mismo momento.</p>
-                    </div>
-                    <img class="imagen1" src="./imagenes/bloque1.webp" alt="">  
-                   <center> <img class="imagen2" src="./imagenes/bloque1.webp" alt=""> </center>
-                </div>
-                <div class="bloque2">
-                    <img class="imagen1" src="./imagenes/bloque2.webp" alt="">
-                    <div class="textobloque1">
-                        <h2>CALIDAD EN SERVICIOS</h2>
-                        <p>Nuestros camareros te escuchan y entienden.
-                            En Block House todos los camareros son profesionales. Reciben una constante formación de servicio y productos lo que les da la seguridad necesaria para trabajar relajados y con mucha alegría y así ofrecer la mejor atención.
-                            ¡Dejales recomendarte sus platos favoritos, seguro que quedarás satisfecho!</p>
-                    </div>
-                    <center>  <img class="imagen2" src="./imagenes/bloque2.webp" alt=""></center>
-                </div>
-                <div class="bloque3">
-                    <div class="textobloque1">
-                        <h2>CALIDAD EN AMBIENTE</h2>
-                        <p>En Block House empleamos las ultimas técnicas de extracción de humos, filtros y sistemas de aire para asegurarte un ambiente libre de olores, cómodo y agradable.
-                            Las luces, la música y la decoración están todos diseñados para hacerte sentir como en casa. A parte de esto hacemos uso de la última tecnologia en ahorro de energía para respetar el medio ambiente.</p>
-                    </div>
-                <img class="imagen1" src="./imagenes/bloque3.webp" alt="">
-                <center><img class="imagen2" src="./imagenes/bloque3.webp" alt=""></center>
-            </div>
-        
-            </div>
-        
-        </div>
-        
-        <footer>
-            <div class="footer-content">
-                <ul class="footer-links">
-                    <li><p>Sergio Cabrera</p></li>
-                    <li><a href="#"><p>Administracion Central</p></a></li>
-                  </ul>
-              <ul class="footer-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Empresa</a></li>
-                <li><a href="https://www.facebook.com/blockhouseES/"><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" fill="white"></path> </svg>
-                </a></li>
-              </ul>
-            </div>
-          </footer>
- 
-<script>
- // Obtenemos el elemento del input de fecha
- const fechaInput = document.getElementById('campo2');
-
-// Obtenemos la fecha actual en formato yyyy-mm-dd
-const fechaActual = new Date().toISOString().slice(0, 10);
-
-// Establecemos la fecha actual como valor predeterminado en el input de fecha
-fechaInput.value = fechaActual;
-
-    // En tu archivo JavaScript
-const novedadesElement = document.querySelector('.novedades');
-
-// Cuando quieras mostrar el aviso de novedades
-novedadesElement.classList.add('visible');
+    <div class="margenes-login">
 
 
-// A esto
-element.setPointerCapture(pointerId);
+        <div class="login-container">
+            <h2 class="tituloregistro">¡Hazte miembro de Block-House Comunity en España!</h2>
+            <h3 class="tituloregistro1">Una cuenta Block House te da las siguientes ventajas:</h3>
+            <p class="parraforegistro">- Realizar una reserva online hasta 30 minutos antes de la hora reservada <br>
+                - Realizar pedidos para llevar Comida<br>
+                - Recibir una pequeña sorpresa por tu cumpleaños<br>
+                - Abonar información sobre acciones y ofertas especiales</p>
+            <form id="login-form">
 
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
 
-</script>
+                    <b> <label  for="campo1">Mi Block House:</label></b>
+                    <select class="input-reserva1" name="campo1">
+                        <option value="" disabled selected>Selecciona un restaurante</option>
+                        <option value="opcion1">Málaga Larios</option>
+                        <option value="opcion2">Málaga Plaza Mayor</option>
+                        <option value="opcion3">Marbella</option>
+                        <option value="opcion4">Palma</option>
+                        <option value="opcion5">Santa Ponsa</option>
+                        <option value="opcion6">Festival Park</option>
+                        <option value="opcion7">Porto Pi</option>
+
+                    </select>   
+                    <b> <label  for="">Nombre:</label></b>
+                    <input class="input-reserva1" type="text" id="" name="" max="" placeholder="">  
+                    <b> <label  for="">Apellidos:</label></b>
+                    <input class="input-reserva1" type="text" id="" name="" max="" placeholder="">  
+                    <b> <label  for="">Cumpleaños:</label></b>
+                    <input class="input-reserva1" type="date" id="" name="" max="" placeholder="">  
+                    <b> <label  for="campo1">Sexo:</label></b>
+                    <select class="input-reserva1" name="campo1">
+                        <option value="" disabled selected>Selecciona un sexo</option>
+                        <option value="opcion1">Masculino</option>
+                        <option value="opcion2">Femenino</option>
+                        <option value="opcion3">Otros</option>
+
+                    </select>   
+                    <b> <label  for="">Telefono:</label></b>
+                    <input class="input-reserva1" type="number" id="" name="" max="" placeholder="">                                   
+                  
+                        <button class="botonlogin" type="submit">CREAR CUENTA</button>
+                    
+            </form>
+        </div>   
+       
+
+<footer>
+    <div class="footer-content">
+        <ul class="footer-links">
+            <li><p>Sergio Cabrera</p></li>
+            <li><a href="#"><p>Administracion Central</p></a></li>
+          </ul>
+      <ul class="footer-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Empresa</a></li>
+        <li><a href="https://www.facebook.com/blockhouseES/"><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" fill="white"></path> </svg>
+        </a></li>
+      </ul>
+    </div>
+  </footer>
+<script src="js/login.js"></script>
 </body>
 </html>
