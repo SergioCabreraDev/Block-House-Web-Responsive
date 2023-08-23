@@ -573,6 +573,52 @@ width: 100%;
  
       width: 100%;
     }
+    .formulario1-reserva{
+      background-color: rgb(253, 211, 183);
+      padding: 3% 5%;
+      margin: 5% 8%;
+      margin-bottom: 50%;
+      font-family: 'TheSerifExtraBold';
+      font-size: 22px;
+    }
+    .tituloreservas{
+      font-size: 30px;
+    }
+    .label-reserva1{
+      margin-top: 3%;
+      display: flex;
+      flex-direction: column;
+    }
+    .input-reserva1{ 
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .button-reserva1 {
+      margin-top: 2%;
+      background-color: #ffffff; /* Color de fondo rojo */
+      color: #050505; /* Color de las letras blancas */
+      border: 2px solid #000000; /* Borde blanco de 2px */
+      border-radius: 3px; /* Bordes redondos */
+      padding: 10px 20px; /* Espacio interno alrededor del texto */
+      font-size: 13px; /* Tamaño de fuente */
+      cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+      font-family: 'TheSerifExtraBold';
+    }
+    
+    .button-reserva1:hover {
+      background-color:  rgb(252, 158, 96);
+      color: #000000;
+    }
+    
+    .button-reserva1:active {
+      background-color: #ff0000;
+      color: #ffffff;
+    }
     /* Declara la fuente personalizada */
   @font-face {
     font-family: 'Clarendon-Serial-Heavy';
@@ -593,6 +639,13 @@ width: 100%;
   @font-face {
   font-family: 'Overpass-Regular';
   src: url('../assets/fonts/Overpass-Regular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  }
+  /* Declara la fuente personalizada */
+@font-face {
+  font-family: 'TheSerifExtraBold';
+  src: url('../assets/fonts/TheSerifExtraBold-Plain.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   }

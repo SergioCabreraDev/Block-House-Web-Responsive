@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo-movil.css">
-    <link rel="stylesheet" href="css/estilo-tablet.css">
-    <link rel="stylesheet" href="css/estilo-pc.css">
+    <link rel="stylesheet" href="../css/estilo-movil.css">
+    <link rel="stylesheet" href="../css/estilo-tablet.css">
+    <link rel="stylesheet" href="../css/estilo-pc.css">
 </head>
 <body>
     <div class="superior">
@@ -64,13 +64,18 @@
 
                     </a>
                 </li>
-
+                <div class="reservas">
+                <li class="dropdown__list">
+                    <a href="reservar/reservas.html" class="dropdown__link">
+                        <span class="dropdown__span"><B>RESERVAR</B></span>
+                    </a>
+                </li>
+               </div>
                 <li class="dropdown__list">
                     <a href="#" class="dropdown__link">
                         <span class="dropdown__span"><B>INICIAR SESION</B></span>
                     </a>
                 </li>
-
             </ul>
 
         </div>
@@ -97,7 +102,7 @@
               <input class="input-reserva" type="date" id="campo2" name="campo2"  placeholder="Selecciona una fecha">
 
             <label class="label-reserva" for="campo3">PERSONAS:</label>
-            <input class="input-reserva" type="number" id="campo3" name="campo3" placeholder="Numero de Personas">
+            <input class="input-reserva" type="number" id="campo3" name="campo3" max="6" placeholder="Numero de Personas">
 
             <button class="button-reserva" type="submit"><b>RESERVAR</b></button></b>
         </form>
