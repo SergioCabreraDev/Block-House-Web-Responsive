@@ -11,7 +11,8 @@
       font-family: Arial;
   }
 
-  #overlay {
+    #overlay {
+    font-size: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -32,7 +33,9 @@
 }
 
 #entendido {
-    padding: 10px 20px;
+  margin-top: 3%;
+    padding: 12px 22px;
+    border-radius: 2%;
     background-color: #007bff;
     border: none;
     color: white;
