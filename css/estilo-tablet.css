@@ -212,7 +212,7 @@
       background-color: red;
       margin: 0 auto;
       padding: 5px;
-      font-family: 'Overpass-Regular';
+      
     }
     .novedades {
       margin: 0 auto;
@@ -301,7 +301,7 @@
       /* MALAGA LARIOS */
   .titulo-larios{
     padding-top: 3%;
-    font-family: 'ImpressumStd-Roman';
+    font-family: 'Clarendon-Serial-Heavy';
     text-align: center;
     font-size: 35px;
   }
