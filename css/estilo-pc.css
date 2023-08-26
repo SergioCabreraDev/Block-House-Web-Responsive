@@ -16,7 +16,9 @@ footer {
 .parrafo-direccion{
   font-family: 'TheSerifExtraBold';
 }
-
+.titulocartas{
+  font-family: 'Clarendon-Serial-Heavy';
+}
 
   @media (min-width: 1500px) {
 
@@ -402,7 +404,7 @@ h1{
   }
   .titulocartas{
     padding-top: 1%;
-    font-family: 'ImpressumStd-Roman';
+    
     font-size: 35px;
   }
 
@@ -413,7 +415,7 @@ h1{
     gap: 75px;
     margin: 6%;
     color: white;
-    font-family: 'Overpass-Regular';
+    
     padding-bottom: 9%;
 
   }
@@ -484,11 +486,11 @@ h1{
       }
 
   .frasecarta{
-    font-family: 'Overpass-Regular';
+    
     margin-left: 7%;
     margin-right: 7%;
-    font-size: 20
-    px;
+    font-size: 20px;
+
   }
   .linkcartas {
     color: white;
@@ -506,12 +508,15 @@ h1{
 
   #contenido-grupos{
 
-    font-family: 'Overpass-Regular';
+   
   }
   .texto-grupos{
-    padding: 5%;
+    padding: 2%;
     background-color: #dfdddd;
     font-size: 18px;
+  }
+  .texto-grupos h3{
+    font-size: 28px;
   }
   .lista-menus{
     margin-top: 2%;
@@ -1171,7 +1176,7 @@ h1{
   }
   .titulocartas{
     padding-top: 1%;
-    font-family: 'ImpressumStd-Roman';
+   
     font-size: 35px;
   }
   .reservas{
@@ -1185,7 +1190,7 @@ h1{
     gap: 75px;
     margin: 6%;
     color: white;
-    font-family: 'Overpass-Regular';
+ 
     padding-bottom: 9%;
 
   }
@@ -1256,11 +1261,10 @@ h1{
       }
 
   .frasecarta{
-    font-family: 'Overpass-Regular';
+    
     margin-left: 7%;
     margin-right: 7%;
-    font-size: 20
-    px;
+    font-size: 20px;
   }
   .linkcartas {
     color: white;
@@ -1277,12 +1281,15 @@ h1{
   }
 
   #contenido-grupos{
-    font-family: 'Overpass-Regular';
+    
   }
   .texto-grupos{
     padding: 5%;
     background-color: #dfdddd;
     font-size: 18px;
+  }
+  .texto-grupos h3{
+    font-size: 28px;
   }
   .lista-menus{
     margin-top: 2%;

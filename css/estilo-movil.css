@@ -437,7 +437,6 @@ width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center; /* Centra horizontalmente los elementos */
-  font-family: 'ImpressumStd-Roman';
   font-size: 17px;
   
 }
@@ -489,14 +488,14 @@ border-radius: 5px;
     }
 
 .frasecarta{
-  font-family: 'Overpass-Regular';
+  
   margin-left: 3%;
   margin-right: 3%;
   font-size: 20px
 }
 #contenido-grupos{
   margin:5% 2%;
-  font-family: 'Overpass-Regular';
+ 
 }
 .texto-grupos{
   padding: 5%;
