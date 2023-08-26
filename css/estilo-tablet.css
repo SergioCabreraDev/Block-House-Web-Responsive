@@ -506,7 +506,7 @@
       }
 
   .frasecarta{
-   
+    font-family: 'TheSerifExtraBold';
     margin-left: 7%;
     margin-right: 7%;
     margin-bottom: 7%;
@@ -531,7 +531,7 @@ width: 100%;
 
   #contenido-grupos{
     margin:5% 10%;
-    font-family: 'Overpass-Regular';
+    font-family: 'TheSerifExtraBold';
   }
   .texto-grupos{
     padding: 5%;
