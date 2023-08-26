@@ -38,6 +38,7 @@
     
     .nav{
       background-color: #e4e4e4;
+      font-size: 17px;
     
         --img1: scale(1);
         --img2: scale(0);
@@ -91,7 +92,7 @@
         position: absolute;
         background-color: #000;
         width: 75%;
-        max-width: 300px;
+        max-width: 400px;
         right: 0;
         top: 0;
         bottom: 0;
