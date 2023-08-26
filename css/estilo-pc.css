@@ -28,6 +28,7 @@ body {
     margin: 0;
     padding: 0;
   }
+
   .superior{
     position: fixed;
   }
@@ -680,7 +681,9 @@ h1{
       color: #ffffff;
     }
     
-
+    #formulario-takeaway1{
+      display: none;
+    }
   
 /* Declara la fuente personalizada */
 @font-face {
@@ -739,6 +742,9 @@ font-style: normal;
   }
   .superior{
     position: fixed;
+  }
+  #formulario-takeaway1{
+    display: none;
   }
   /* Estilos para la barra de navegación */
   .nav {
@@ -1156,9 +1162,11 @@ h1{
   color: white;
   font-size: 20px;
   
+  
   }
 
   .button-takeaway{
+    font-family: 'TheSerifExtraBold';
     display: inline-block;
     padding: 10px 20px;
     border: 2px solid white;

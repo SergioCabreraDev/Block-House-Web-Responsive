@@ -384,7 +384,9 @@ width: 100%;
   .imagenes-restaurantes:hover {
     transform: scale(1.1); /* Ajusta el valor según el grado de agrandamiento deseado */
   }
-
+  #formulario-takeaway1{
+    display: none;
+  }
     #formulario-takeaway{
     margin: 10% 2%;
     margin-bottom: 55%;
@@ -396,9 +398,11 @@ width: 100%;
   border-radius: 2%;
   color: white;
   font-size: 19px;
-  font-family: 'Overpass-Regular';
+  font-family: 'TheSerifExtraBold';
   }
+  
   .button-takeaway{
+    font-family: 'TheSerifExtraBold';
     display: inline-block;
     padding: 16px 32px;
     border: 2px solid white;
