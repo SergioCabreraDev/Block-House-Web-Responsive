@@ -215,6 +215,7 @@ body {
 
     /* Notificacion Superior */
 .avisos{
+  font-family: 'TheSerifExtraBold';
   background-color: red;
   margin: 0 auto;
   padding: 5px;
@@ -958,7 +959,7 @@ font-style: normal;
   background-color: red;
   margin: 0 auto;
   padding: 5px;
- 
+  font-family: 'TheSerifExtraBold';
 }
 .novedades {
   margin: 0 auto;
