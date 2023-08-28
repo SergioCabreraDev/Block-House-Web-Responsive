@@ -20,6 +20,14 @@ footer {
 .titulocartas{
   font-family: 'Clarendon-Serial-Heavy';
 }
+/* Estilos para resaltar campos con errores */
+.error-input {
+  border: 1px solid red;
+}
+
+.echo{
+  font-size: 324423px;
+}
 
   @media (min-width: 1500px) {
 
@@ -141,7 +149,8 @@ body {
   }
   
   .dropdown__li {
-    padding: 5px 20px;
+    margin-top: 3%;
+    padding: 5px 25px;
   }
   
   .dropdown__anchor {
@@ -715,6 +724,35 @@ h1{
     #formulario-takeaway1{
       display: none;
     }
+/* Estilos para el botón de cierre de sesión */
+.boton-cerrar-sesion {
+
+  background-color: #FF0000; /* Color rojo */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.boton-cerrar-sesion:hover {
+  background-color: #CC0000; /* Cambia el color al pasar el cursor sobre el botón */
+}
+
+.error-messagephp {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  max-width: 80%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
   
 /* Declara la fuente personalizada */
 @font-face {
@@ -1520,6 +1558,26 @@ h1{
    .botonregistro:hover {
     background-color: #4b0000;
   }
+  /* Estilos para el botón de cierre de sesión */
+
+/* Estilos para el botón de cierre de sesión */
+.boton-cerrar-sesion {
+  margin-top: 10%;
+  background-color: #FF0000; /* Color rojo */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.boton-cerrar-sesion:hover {
+  background-color: #CC0000; /* Cambia el color al pasar el cursor sobre el botón */
+}
+
+
+
 /* Declara la fuente personalizada */
 @font-face {
   font-family: 'Clarendon-Serial-Heavy';

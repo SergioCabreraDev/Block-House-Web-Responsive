@@ -15,7 +15,7 @@
 
         <div class="nav__container">
 
-            <a href="index.html"><img class="nav__title" src="./assets/logonavbar.png" alt=""></a>
+            <a href="index.php"><img class="nav__title" src="./assets/logonavbar.png" alt=""></a>
 
             <a href="#menu" class="nav__menu">
                 <img src="./assets/menu-icon.svg" class="nav__icon">
@@ -115,55 +115,25 @@
     <div class="margenes-login">
 
 
-        <div class="login-container">
-            <h2 class="tituloregistro">¡Hazte miembro de Block-House Comunity en España!</h2>
-            <h3 class="tituloregistro1">Una cuenta Block House te da las siguientes ventajas:</h3>
-            <p class="parraforegistro">- Realizar una reserva online hasta 30 minutos antes de la hora reservada <br>
-                - Realizar pedidos para llevar Comida<br>
-                - Recibir una pequeña sorpresa por tu cumpleaños<br>
-                - Abonar información sobre acciones y ofertas especiales</p>
-            <form id="login-form">
-
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="password">Contraseña:</label>
-                    <input type="password" id="password" name="password" required>
-
-                    <b> <label  for="campo1">Mi Block House:</label></b>
-                    <select class="input-reserva1" name="campo1">
-                        <option value="" disabled selected>Selecciona un restaurante</option>
-                        <option value="opcion1">Málaga Larios</option>
-                        <option value="opcion2">Málaga Plaza Mayor</option>
-                        <option value="opcion3">Marbella</option>
-                        <option value="opcion4">Palma</option>
-                        <option value="opcion5">Santa Ponsa</option>
-                        <option value="opcion6">Festival Park</option>
-                        <option value="opcion7">Porto Pi</option>
-
-                    </select>   
-                    <b> <label  for="">Nombre:</label></b>
-                    <input class="input-reserva1" type="text" id="" name="" max="" placeholder="">  
-                    <b> <label  for="">Apellidos:</label></b>
-                    <input class="input-reserva1" type="text" id="" name="" max="" placeholder="">  
-                    <b> <label  for="">Cumpleaños:</label></b>
-                    <input class="input-reserva1" type="date" id="" name="" max="" placeholder="">  
-                    <b> <label  for="campo1">Sexo:</label></b>
-                    <select class="input-reserva1" name="campo1">
-                        <option value="" disabled selected>Selecciona un sexo</option>
-                        <option value="opcion1">Masculino</option>
-                        <option value="opcion2">Femenino</option>
-                        <option value="opcion3">Otros</option>
-
-                    </select>   
-                    <b> <label  for="">Telefono:</label></b>
-                    <input class="input-reserva1" type="number" id="" name="" max="" placeholder="">                                   
-                  
-                        <button class="botonlogin" type="submit">CREAR CUENTA</button>
-                    
+        <div class="login-container" >
+            <h2>Iniciar sesión</h2>
+            <form id="login-form" method="POST" action="php/validacionlogin.php">
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" name="email" required>
+              
+              <label for="password">Contraseña:</label>
+              <input type="password" id="password" name="password" required>
+            <div class="botoneslogin">
+                <button class="botonlogin" type="submit">INICIAR SESIÓN</button>
+            
             </form>
         </div>   
-       
+        <form class="registro" action="">
+            <p>Si aun no te has registrado haz click aqui</p>
+            <button class="botonregistro" type="button" onclick="window.location.href = 'registro.php';">CREAR NUEVA CUENTA</button>
+        </form>
+          </div>
+        </div>        
 
 <footer>
     <div class="footer-content">

@@ -7,6 +7,59 @@
     <link rel="stylesheet" href="css/estilo-movil.css">
     <link rel="stylesheet" href="css/estilo-tablet.css">
     <link rel="stylesheet" href="css/estilo-pc.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    var overlay = document.getElementById("overlay");
+    var entendidoButton = document.getElementById("entendido");
+
+    entendidoButton.addEventListener("click", function() {
+        overlay.style.display = "none";
+    });
+
+
+    
+});
+         window.onload = function () {
+            const form = document.getElementById("login-form");
+
+            form.addEventListener("submit", function (event) {
+                const nombre = document.getElementById("nombre").value;
+                const apellidos = document.getElementById("apellidos").value;
+                const email = document.getElementById("email").value;
+                const password = document.getElementById("password").value;
+                const telefono = document.getElementById("telefono").value;
+
+                const letrasRegExp = /^[A-Za-z]+$/;
+                const correoRegExp = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+                const passwordRegExp = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+
+                if (!letrasRegExp.test(nombre)) {
+                    alert("El nombre debe contener solo letras.");
+                    event.preventDefault();
+                }
+
+                if (!letrasRegExp.test(apellidos)) {
+                    alert("Los apellidos deben contener solo letras.");
+                    event.preventDefault();
+                }
+
+                if (!correoRegExp.test(email)) {
+                    alert("Por favor, introduce un correo válido.");
+                    event.preventDefault();
+                }
+
+                if (!passwordRegExp.test(password)) {
+                    alert("La contraseña debe contener al menos 8 caracteres, incluyendo letras y números.");
+                    event.preventDefault();
+                }
+
+                if (telefono.length !== 9) {
+                    alert("El número de teléfono debe tener 9 dígitos.");
+                    event.preventDefault();
+                }
+            });
+        };
+    </script>
 </head>
 <body>
     <div class="superior">
@@ -72,7 +125,7 @@
                 </li>
                </div>
                 <li class="dropdown__list">
-                    <a href="iniciarsesion.html" class="dropdown__link">
+                    <a href="iniciarsesion.php" class="dropdown__link">
                         <span class="dropdown__span"><B>INICIAR SESION</B></span>
                     </a>
                 </li>
@@ -114,26 +167,55 @@
 
     <div class="margenes-login">
 
-
         <div class="login-container">
-            <h2>Iniciar sesión</h2>
-            <form id="login-form">
-              <label for="email">Correo electrónico:</label>
-              <input type="email" id="email" name="email" required>
-              
-              <label for="password">Contraseña:</label>
-              <input type="password" id="password" name="password" required>
-            <div class="botoneslogin">
-                <button class="botonlogin" type="submit">INICIAR SESIÓN</button>
-            
+            <h2 class="tituloregistro">¡Hazte miembro de Block-House Comunity en España!</h2>
+            <h3 class="tituloregistro1">Una cuenta Block House te da las siguientes ventajas:</h3>
+            <p class="parraforegistro">- Realizar una reserva online hasta 30 minutos antes de la hora reservada <br>
+                - Realizar pedidos para llevar Comida<br>
+                - Recibir una pequeña sorpresa por tu cumpleaños<br>
+                - Abonar información sobre acciones y ofertas especiales</p>
+                <form id="login-form" method="POST" action="php/validacionregistro.php">
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <b> <label  for="campo1">Mi Block House:</label></b>
+                    <select class="input-reserva1" name="restaurante" required>
+                        <option value="" disabled selected>Selecciona un restaurante</option>
+                        <option value="Málaga Larios">Málaga Larios</option>
+                        <option value="Málaga Plaza Mayor">Málaga Plaza Mayor</option>
+                        <option value="Marbella">Marbella</option>
+                        <option value="Palma">Palma</option>
+                        <option value="Santa Ponsa">Santa Ponsa</option>
+                        <option value="Festival Park">Festival Park</option>
+                        <option value="Porto Pi">Porto Pi</option>
+
+                    </select>   
+                    <b> <label  for="">Nombre:</label></b>
+                    <input class="input-reserva1" type="text" id="nombre" name="nombre" max="" placeholder="" required>  
+                    <b> <label  for="">Apellidos:</label></b>
+                    <input class="input-reserva1" type="text" id="apellidos" name="apellidos" max="" placeholder="" required>  
+                    <b> <label  for="">Cumpleaños:</label></b>
+                    <input class="input-reserva1" type="date" id="" name="cumpleanos" max="" placeholder="">  
+                    <b> <label  for="campo1">Sexo:</label></b>
+                    <select class="input-reserva1" name="sexo" required>
+                        <option value="" disabled selected>Selecciona un sexo</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Otros">Otros</option>
+
+                    </select>   
+                    <b> <label  for="">Telefono:</label></b>
+                    <input class="input-reserva1" type="number" id="telefono" name="telefono" max="" placeholder="" required>                                   
+                  
+                        <button class="botonlogin" type="submit">CREAR CUENTA</button>
+
             </form>
         </div>   
-        <form class="registro" action="">
-            <p>Si aun no te has registrado haz click aqui</p>
-            <button class="botonregistro" type="button" onclick="window.location.href = 'registro.html';">CREAR NUEVA CUENTA</button>
-        </form>
-          </div>
-        </div>        
+       
 
 <footer>
     <div class="footer-content">
@@ -149,6 +231,6 @@
       </ul>
     </div>
   </footer>
-<script src="js/login.js"></script>
+
 </body>
 </html>

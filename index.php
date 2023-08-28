@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+$usuarioAutenticado = false;
+
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
+    $usuarioAutenticado = true;
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -74,11 +83,36 @@
                     </a>
                 </li>
                </div>
+                    <?php if ($usuarioAutenticado) { ?>
+                        <li class="dropdown__list">
+                    <a href="#" class="dropdown__link">
+                        <span class="dropdown__span"><B>MI CUENTA</B></span>
+                        <img src="./assets/down.svg" class="dropdown__arrow">
+
+                        <input type="checkbox" class="dropdown__check">
+                    </a>
+
+                    <div class="dropdown__content">
+
+                        <ul class="dropdown__sub">
+                            <li class="dropdown__li"><a href="php/inicio_exitoso.php" class="dropdown__anchor">Cuenta</a></li>
+                            <li class="dropdown__li"><a href="php/datos_personales.php" class="dropdown__anchor">Tus Datos Personales</a></li>
+                            <li class="dropdown__li"><a href="Restaurantes/malaga-plaza-mayor.html" class="dropdown__anchor">Notificaciones</a></li>
+                            <li class="dropdown__li"><a href="Restaurantes/marbella.html" class="dropdown__anchor">Emitir Facturas</a></li>
+                            <li class="dropdown__li"><a href="Restaurantes/Palma.html" class="dropdown__anchor">Feedback</a></li>
+                            <li class="dropdown__li"><a href="Restaurantes/SantaPonsa.html" class="dropdown__anchor">Wi-Fi</a></li>
+                            <li class="dropdown__li"><a href="Restaurantes/FestivalPark.html" class="dropdown__anchor">Eliminar Cuenta</a></li>
+                        </ul>
+
+                    </div>
+                </li>
+            <?php } else { ?>
                 <li class="dropdown__list">
-                    <a href="iniciarsesion.html" class="dropdown__link">
+                    <a href="iniciarsesion.php" class="dropdown__link">
                         <span class="dropdown__span"><B>INICIAR SESION</B></span>
                     </a>
                 </li>
+            <?php } ?>
             </ul>
 
         </div>
@@ -185,7 +219,7 @@
             </div>
           </footer>
 
-        <script src="script.js"></script>
+        <script src="app.js"></script>
 <script>
  // Obtenemos el elemento del input de fecha
  const fechaInput = document.getElementById('campo2');
