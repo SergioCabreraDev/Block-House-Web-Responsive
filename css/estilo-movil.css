@@ -55,6 +55,18 @@
       --clip:inset(0 0 0 0);
   
   }
+  .error-messagephp {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 80%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
   
   .nav__container{
       width: 90%;
@@ -466,7 +478,7 @@ width: 100%;
  }
  #contenedor-de-cartas {
   margin-top: 15%;
-  margin-bottom: 15%; /* Ajusta este valor según tus necesidades */
+  margin-bottom: 29%; /* Ajusta este valor según tus necesidades */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -713,6 +725,71 @@ border-radius: 5px;
     .parraforegistro{
       font-size: 17px;
       margin-bottom: 10%;
+    }
+    .notificaciones{
+      font-family: 'TheSerifExtraBold';
+      margin-left: 3%;
+      margin-right: 3%;
+      margin-bottom: 80%;
+    }
+    .formulario-noti{
+      font-size: 20px;
+    }
+    .formulario-noti button {
+      font-family: 'TheSerifExtraBold';
+      margin-top: 1%;
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 15px;
+      border: 2px solid black;
+      border-radius: 5px;
+      background-color: #f0f0f0;
+      color: black;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .formulario-noti button:hover {
+      background-color: black;
+      color: white;
+    }
+
+    #contenido_factura{
+      margin: 5%;
+      font-family: 'TheSerifExtraBold';
+      font-size: 17px;
+    }
+    
+    .formulario_factura button {
+      margin-top: 1%;
+      display: inline-block;
+      padding: 10px 20px;
+     
+      border: 2px solid black;
+      border-radius: 5px;
+      background-color: #f0f0f0;
+      color: black;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      font-family: 'TheSerifExtraBold';
+      font-size: 15px;
+    }
+    
+    .formulario_factura button:hover {
+      background-color: black;
+      color: white;
+    }
+    
+    .input-factura{
+      margin-right: 2%;
+      margin-left: 4px;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #000000;
+      border-radius: 3px;
+    }
+    .input-factura2{
+    margin-top: 0.5%;
     }
   /* Declara la fuente personalizada */
 @font-face {

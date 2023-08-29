@@ -27,7 +27,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
 
         <div class="nav__container">
 
-            <a href="#"><img class="nav__title" src="./assets/logonavbar.png" alt=""></a>
+            <a href="index.php"><img class="nav__title" src="./assets/logonavbar.png" alt=""></a>
 
             <a href="#menu" class="nav__menu">
                 <img src="./assets/menu-icon.svg" class="nav__icon">
@@ -50,20 +50,20 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
                     <div class="dropdown__content">
 
                         <ul class="dropdown__sub">
-                            <li class="dropdown__li"><a href="Restaurantes/malaga-larios.html" class="dropdown__anchor">Málaga Larios</a></li>
-                            <li class="dropdown__li"><a href="Restaurantes/malaga-plaza-mayor.html" class="dropdown__anchor">Málaga Plaza Mayor</a></li>
-                            <li class="dropdown__li"><a href="Restaurantes/marbella.html" class="dropdown__anchor">Marbella</a></li>
-                            <li class="dropdown__li"><a href="Restaurantes/Palma.html" class="dropdown__anchor">Palma</a></li>
-                            <li class="dropdown__li"><a href="Restaurantes/SantaPonsa.html" class="dropdown__anchor">Santa Ponsa</a></li>
-                            <li class="dropdown__li"><a href="Restaurantes/FestivalPark.html" class="dropdown__anchor">Festival Park</a></li>
-                            <li class="dropdown__li"><a href="Restaurantes/PortoPi.html" class="dropdown__anchor">Porto Pi</a></li>
+                            <li class="dropdown__li"><a href="Restaurantes/malaga-larios.php" class="dropdown__anchor">Málaga Larios</a></li>
+                            <li class="dropdown__li"><a href="Restaurantes/malaga-plaza-mayor.php" class="dropdown__anchor">Málaga Plaza Mayor</a></li>
+                            <li class="dropdown__li"><a href="Restaurantes/marbella.php" class="dropdown__anchor">Marbella</a></li>
+                            <li class="dropdown__li"><a href="Restaurantes/Palma.php" class="dropdown__anchor">Palma</a></li>
+                            <li class="dropdown__li"><a href="Restaurantes/SantaPonsa.php" class="dropdown__anchor">Santa Ponsa</a></li>
+                            <li class="dropdown__li"><a href="Restaurantes/FestivalPark.php" class="dropdown__anchor">Festival Park</a></li>
+                            <li class="dropdown__li"><a href="Restaurantes/PortoPi.php" class="dropdown__anchor">Porto Pi</a></li>
                         </ul>
 
                     </div>
                 </li>
 
                 <li class="dropdown__list">
-                    <a href="ParaLLevar/pide-para-llevar.html" class="dropdown__link">
+                    <a href="ParaLLevar/pide-para-llevar.php" class="dropdown__link">
                         <span class="dropdown__span"><B>PIDE PARA LLEVAR</B></span>
                     </a>
                 </li>
@@ -71,14 +71,14 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
                 
 
                 <li class="dropdown__list">
-                    <a href="CARTA/cartas.html" class="dropdown__link">
+                    <a href="CARTA/cartas.php" class="dropdown__link">
                         <span class="dropdown__span"><B>CARTA</B></span>
 
                     </a>
                 </li>
                 <div class="reservas">
                 <li class="dropdown__list">
-                    <a href="reservar/reservas.html" class="dropdown__link">
+                    <a href="reservar/reservas.php" class="dropdown__link">
                         <span class="dropdown__span"><B>RESERVAR</B></span>
                     </a>
                 </li>
@@ -97,11 +97,11 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
                         <ul class="dropdown__sub">
                             <li class="dropdown__li"><a href="php/inicio_exitoso.php" class="dropdown__anchor">Cuenta</a></li>
                             <li class="dropdown__li"><a href="php/datos_personales.php" class="dropdown__anchor">Tus Datos Personales</a></li>
-                            <li class="dropdown__li"><a href="Restaurantes/malaga-plaza-mayor.html" class="dropdown__anchor">Notificaciones</a></li>
-                            <li class="dropdown__li"><a href="Restaurantes/marbella.html" class="dropdown__anchor">Emitir Facturas</a></li>
-                            <li class="dropdown__li"><a href="Restaurantes/Palma.html" class="dropdown__anchor">Feedback</a></li>
-                            <li class="dropdown__li"><a href="Restaurantes/SantaPonsa.html" class="dropdown__anchor">Wi-Fi</a></li>
-                            <li class="dropdown__li"><a href="Restaurantes/FestivalPark.html" class="dropdown__anchor">Eliminar Cuenta</a></li>
+                            <li class="dropdown__li"><a href="php/notificaciones.php" class="dropdown__anchor">Notificaciones</a></li>
+                            <li class="dropdown__li"><a href="php/facturas.php" class="dropdown__anchor">Emitir Facturas</a></li>
+                            <li class="dropdown__li"><a href="php/feedback.php" class="dropdown__anchor">Feedback</a></li>
+                            <li class="dropdown__li"><a href="php/wifi.php" class="dropdown__anchor">Wi-Fi</a></li>
+                            <li class="dropdown__li"><a href="php/eliminar.php" class="dropdown__anchor">Eliminar Cuenta</a></li>
                         </ul>
 
                     </div>

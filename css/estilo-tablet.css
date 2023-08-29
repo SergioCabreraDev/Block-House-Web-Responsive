@@ -8,6 +8,18 @@
     body{
         font-family: Arial;
     }
+    .error-messagephp {
+      background-color: #f2f2f2;
+      border: 1px solid #ccc;
+      padding: 10px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      max-width: 80%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
     #overlay {
       font-size: 100%;
       position: fixed;
@@ -479,56 +491,49 @@
   }
 
   #contenedor-de-cartas {
+    margin-top: 10%;
+    margin-bottom: 15%; /* Ajusta este valor según tus necesidades */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1%;
-    color: white;
- 
-    padding-bottom: 80%;
-    font-size: 160%;
-  }
-  
-  .cartademenu,
-  .postres,
-  .cartaniños,
-  .nuestrosvinos {
-    flex: 1;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: transform 0.3s ease;
+    align-items: center; /* Centra horizontalmente los elementos */
+    font-size: 17px;
+    font-family: 'TheSerifExtraBold';
+    
+  }
+  #contenedor-de-cartas > div {
+    margin-bottom: 1.5em; /* Agrega espacio entre los divs */
   }
   
-  .cartademenu {
-    width: 25%; /* Ajustar el ancho según tu preferencia */
-    background-image: url('../imagenes/menu.webp');
+  .cartademenu{
+  padding: 1em 4em;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
   }
   
-  .postres {
-    width: 25%; /* Ajustar el ancho según tu preferencia */
-    background-image: url('../imagenes/postres.webp');
+  .postres{
+  padding: 1em 3em;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
   }
   
-  .cartaniños {
-    width: 25%; /* Ajustar el ancho según tu preferencia */
-    background-image: url('../imagenes/niños.webp');
+  .cartaniños{
+  padding: 1em 2em;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
   }
   
-  .nuestrosvinos {
-    width: 25%; /* Ajustar el ancho según tu preferencia */
-    background-image: url('../imagenes/vinos.webp');
+  .nuestrosvinos{
+  padding:1em 4em;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
   }
   
-  .cartademenu:hover,
-  .postres:hover,
-  .cartaniños:hover,
-  .nuestrosvinos:hover {
-    transform: scale(1.1);
-  }
+  
+
+    
+    
+  
   
     .menugrupo{
     margin-left: 30%;
@@ -550,7 +555,7 @@
     font-size: 23px
   }
   .linkcartas {
-    color: white;
+    color: rgb(2, 2, 2);
     text-decoration: none; /* Opcional: para quitar el subrayado de los enlaces */
   }
 
@@ -731,6 +736,70 @@ width: 100%;
    }
    .botonregistro:hover {
     background-color: #4b0000;
+  }
+  .notificaciones{
+    font-family: 'TheSerifExtraBold';
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 40%;
+  }
+  .formulario-noti{
+    font-size: 20px;
+  }
+  .formulario-noti button {
+    font-family: 'TheSerifExtraBold';
+    margin-top: 1%;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 12px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .formulario-noti button:hover {
+    background-color: black;
+    color: white;
+  }
+  #contenido_factura{
+    margin: 5%;
+    font-family: 'TheSerifExtraBold';
+    font-size: 22px;
+  }
+  
+  .formulario_factura button {
+    margin-top: 1%;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'TheSerifExtraBold';
+    font-size: 15px;
+  }
+  
+  .formulario_factura button:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .input-factura{
+    margin-right: 2%;
+    margin-left: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+  }
+  .input-factura2{
+  margin-top: 0.5%;
   }
     /* Declara la fuente personalizada */
   @font-face {

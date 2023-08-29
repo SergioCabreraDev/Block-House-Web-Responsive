@@ -124,7 +124,7 @@ body {
   }
   
   .dropdown__arrow {
-    width: 10px;
+    width: 20px;
     margin-left: 5px;
   }
   
@@ -212,7 +212,8 @@ body {
   padding: 10px 20px; /* Espacio interno alrededor del texto */
   font-size: 13px; /* Tamaño de fuente */
   cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  font-family: Arial, sans-serif;
+  font-family: 'TheSerifExtraBold';
+
 }
 
 .button-reserva:hover {
@@ -228,6 +229,7 @@ body {
 
     /* Notificacion Superior */
 .avisos{
+ 
   font-family: 'TheSerifExtraBold';
   background-color: red;
   margin: 0 auto;
@@ -752,8 +754,79 @@ h1{
   max-width: 80%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
+.notificaciones{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 20%;
+}
+.formulario-noti{
+  font-size: 20px;
+}
+.formulario-noti button {
+  margin-top: 1%;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 12px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
   
+}
+
+.formulario-noti button:hover {
+  background-color: black;
+  color: white;
+}
+
+#contenido_factura{
+  margin: 5%;
+  font-size: 20px;
+}
+.formulario_factura button {
+  margin-top: 1%;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'TheSerifExtraBold';
+}
+
+.formulario_factura button:hover {
+  background-color: black;
+  color: white;
+}
+
+.input-factura{
+  margin-right: 2%;
+  margin-left: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000000;
+  border-radius: 3px;
+}
+.input-factura2{
+margin-top: 0.5%;
+}
+.br_pantallapequeña{
+display: none;
+}
+.br_pantallaipad{
+  display: none;
+  }
+  
+  #eliminar-form{
+    margin-top: 10%;
+    align-items: center;
+    text-align: center;
+  }
 /* Declara la fuente personalizada */
 @font-face {
   font-family: 'Clarendon-Serial-Heavy';
@@ -894,7 +967,7 @@ font-style: normal;
   }
   
   .dropdown__arrow {
-    width: 10px;
+    width: 20px;
     margin-left: 5px;
   }
   
@@ -982,7 +1055,7 @@ font-style: normal;
   padding: 10px 20px; /* Espacio interno alrededor del texto */
   font-size: 13px; /* Tamaño de fuente */
   cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-  font-family: 'ImpressumStd-Roman', Arial, sans-serif;
+  font-family: 'TheSerifExtraBold';
 }
 
 .button-reserva:hover {
@@ -998,6 +1071,7 @@ font-style: normal;
 
     /* Notificacion Superior */
 .avisos{
+
   background-color: red;
   margin: 0 auto;
   padding: 5px;
@@ -1295,7 +1369,7 @@ h1{
     margin: 6%;
     color: white;
  
-    padding-bottom: 9%;
+    padding-bottom: 13%;
 
   }
   .cartademenu{
@@ -1384,9 +1458,7 @@ h1{
     padding-bottom: 2%;
   }
 
-  #contenido-grupos{
-    
-  }
+ 
   .texto-grupos{
     padding: 5%;
     background-color: #dfdddd;
@@ -1576,8 +1648,69 @@ h1{
   background-color: #CC0000; /* Cambia el color al pasar el cursor sobre el botón */
 }
 
+.notificaciones{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 20%;
+}
+.formulario-noti{
+  font-size: 20px;
+}
+.formulario-noti button {
+  margin-top: 1%;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 12px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
 
+.formulario-noti button:hover {
+  background-color: black;
+  color: white;
+}
+#contenido_factura{
+  margin: 5%;
+  font-size: 22px;
+}
 
+.formulario_factura button {
+  margin-top: 1%;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 17px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'TheSerifExtraBold';
+}
+
+.formulario_factura button:hover {
+  background-color: black;
+  color: white;
+}
+
+.input-factura{
+  margin-right: 2%;
+  margin-left: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000000;
+  border-radius: 3px;
+}
+.input-factura2{
+margin-top: 0.5%;
+}
+.br_pantallaipad{
+  display: none;
+  }
 /* Declara la fuente personalizada */
 @font-face {
   font-family: 'Clarendon-Serial-Heavy';

@@ -147,114 +147,22 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
         </div>
 
 
-<div class="margenes-login">
+<div id="contenido_factura">
+<h3>WiFi</h3>
 
-<div class="login-container">
-    <h2 class="tituloregistro">Tus datos personales</h2>
-    <h3 class="tituloregistro1">Aqui puedes modificar los datos que quieras acerca sobre tu cuenta</h3>
-        <form id="login-form" method="POST" action="modificardatos.php">
+<b><p>En los restaurantes ofrecemos una red WiFi gratuita para nuestros clientes.</p></b>
 
-            
-            
-                        <?php 
-                                    // Conexión a la base de datos
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
-            $dbname = "bh_db";
+<p>
+Para acceder al WiFi hay que <br><br>
 
-            // Crear conexión
-            $conn = new mysqli($servername, $username, $password, $dbname);
-                        // Realiza una consulta para obtener la contraseña del usuario
-            $query = "SELECT Contrasena FROM Usuarios WHERE CorreoElectronico = '" . $_SESSION['email'] . "'";
-            $result = $conn->query($query);
+- seleccionar el WiFi 'BH CLIENTES'
+<br><br>
 
-            if ($result->num_rows > 0) {
-                $row = $result->fetch_assoc();
-                $contrasena_usuario = $row['Contrasena'];
-            } ?>
-
-            <label for="password">Contraseña:</label>
-            <input type="text" id="password" name="password" value="<?php echo $contrasena_usuario; ?>" required>
-
-            <?php
-                        $query = "SELECT Restaurante FROM Usuarios WHERE CorreoElectronico = '" . $_SESSION['email'] . "'";
-                        $result = $conn->query($query);
-            
-                        if ($result->num_rows > 0) {
-                            $row = $result->fetch_assoc();
-                            $restaurante_usuario = $row['Restaurante'];
-                        }
-            ?>
-            <b> <label  for="campo1">Mi Block House:</label></b>
-            <select class="input-reserva1" name="restaurante"  required>
-                <option value="<?php echo $restaurante_usuario; ?>"><?php echo $restaurante_usuario; ?></option>
-                <option value="Málaga Larios">Málaga Larios</option>
-                <option value="Málaga Plaza Mayor">Málaga Plaza Mayor</option>
-                <option value="Marbella">Marbella</option>
-                <option value="Palma">Palma</option>
-                <option value="Santa Ponsa">Santa Ponsa</option>
-                <option value="Festival Park">Festival Park</option>
-                <option value="Porto Pi">Porto Pi</option>
-
-            </select>   
-
-            <?php
-                        $query = "SELECT Nombre FROM Usuarios WHERE CorreoElectronico = '" . $_SESSION['email'] . "'";
-                        $result = $conn->query($query);
-            
-                        if ($result->num_rows > 0) {
-                            $row = $result->fetch_assoc();
-                            $nombre_usuario = $row['Nombre'];
-                        }
-            ?>
-            <b> <label  for="">Nombre:</label></b>
-            <input class="input-reserva1" type="text" id="nombre" value="<?php echo $nombre_usuario; ?>" name="nombre" max="" placeholder=""  required>  
-
-            <?php
-                        $query = "SELECT Apellidos FROM Usuarios WHERE CorreoElectronico = '" . $_SESSION['email'] . "'";
-                        $result = $conn->query($query);
-            
-                        if ($result->num_rows > 0) {
-                            $row = $result->fetch_assoc();
-                            $apellidos_usuario = $row['Apellidos'];
-                        }
-            ?>
-            <b> <label  for="">Apellidos:</label></b>
-            <input class="input-reserva1" type="text" value="<?php echo $apellidos_usuario; ?>" id="apellidos" name="apellidos" max="" placeholder="" required> 
-            <?php
-                        $query = "SELECT Telefono FROM Usuarios WHERE CorreoElectronico = '" . $_SESSION['email'] . "'";
-                        $result = $conn->query($query);
-            
-                        if ($result->num_rows > 0) {
-                            $row = $result->fetch_assoc();
-                            $telefono_usuario = $row['Telefono'];
-                        }
-            ?>
-
-            <b> <label  for="">Telefono:</label></b>
-            <input class="input-reserva1" type="number" value="<?php echo $telefono_usuario; ?>" " id="telefono" name="telefono" max="" placeholder="" required>                                   
-          
-                <button class="botonlogin" type="submit">MODIFICAR DATOS</button>
-
-    </form>
-</div>   
-
-
-<footer>
-<div class="footer-content">
-<ul class="footer-links">
-    <li><p>Sergio Cabrera</p></li>
-    <li><a href="#"><p>Administracion Central</p></a></li>
-  </ul>
-<ul class="footer-links">
-<li><a href="index.html">Inicio</a></li>
-<li><a href="#">Empresa</a></li>
-<li><a href="https://www.facebook.com/blockhouseES/"><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" fill="white"></path> </svg>
-</a></li>
-</ul>
+Como compartimos el espacio/ambiente del restaurante con otras personas, 
+se ruega no visualizar contenidos que puedan resultar ofensivos para otros 
+y mantener el móvil en modo silencio.
+</p>
 </div>
-</footer>
 <script>
  // Obtenemos el elemento del input de fecha
  const fechaInput = document.getElementById('campo2');

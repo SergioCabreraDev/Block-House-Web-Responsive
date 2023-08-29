@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagenes/bh-favicon.ico"/>
+    <link rel="shortcut icon" href="../imagenes/bh-favicon.ico"/>
     <link rel="stylesheet" href="../css/estilo-movil.css">
     <link rel="stylesheet" href="../css/estilo-tablet.css">
     <link rel="stylesheet" href="../css/estilo-pc.css">
@@ -138,7 +138,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Ejecuta la consulta
     if ($conn->query($sql) === TRUE) {
-        echo '<div class="sucess-messagephp">';
+        echo '<div class="error-messagephp">';
         echo "Registro creado exitosamente. Espere 5s y inicie sesión";
         echo '</div>';
         echo '<script>
