@@ -76,13 +76,13 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
 
                     </a>
                 </li>
-                <div class="reservas">
+              
                 <li class="dropdown__list">
                     <a href="../reservar/reservas.php" class="dropdown__link">
                         <span class="dropdown__span"><B>RESERVAR</B></span>
                     </a>
                 </li>
-               </div>
+            
                     <?php if ($usuarioAutenticado) { ?>
                         <li class="dropdown__list">
                     <a href="#" class="dropdown__link">
@@ -127,31 +127,54 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
               
 
 
-        <form class="formulario1-reserva" action="/ruta/del/servidor" method="POST">
+           <form class="formulario1-reserva" action="../php/realizar_reserva.php" method="POST">
            <center><H3 class="tituloreservas">¡REALIZA TU RESERVA ONLINE!</H3></center> 
-           <b> <label class="label-reserva1" for="campo1">RESTAURANTE:</label></b>
-               <select class="input-reserva1" name="campo1">
+           
+            
+            <b>   <label class="label-reserva1" for="campo1">RESTAURANTE:</label>
+               <select class="input-reserva1" name="restaurante">
                    <option value="" disabled selected>Selecciona un restaurante</option>
-                   <option value="opcion1">Málaga Larios</option>
-                   <option value="opcion2">Málaga Plaza Mayor</option>
-                   <option value="opcion3">Marbella</option>
-                   <option value="opcion4">Palma</option>
-                   <option value="opcion5">Santa Ponsa</option>
-                   <option value="opcion6">Festival Park</option>
-                   <option value="opcion7">Porto Pi</option>
+                   <option value="malaga_larios">Málaga Larios</option>
+                   <option value="malaga_plaza_mayor">Málaga Plaza Mayor</option>
+                   <option value="marbella">Marbella</option>
+                   <option value="palma">Palma</option>
+                   <option value="santa_ponsa">Santa Ponsa</option>
+                   <option value="festival_park">Festival Park</option>
+                   <option value="porto_pi">Porto Pi</option>
                    <!-- Agrega más opciones según tus necesidades -->
                </select>                
    
-               <b> <label class="label-reserva1" for="campo2">FECHA:</label></b>
-                 <input class="input-reserva1" type="date" id="campo2" name="campo2"  placeholder="Selecciona una fecha">
+                 <label class="label-reserva1" for="campo2">FECHA:</label>
+                 <input class="input-reserva1" type="date" id="campo2" name="fecha"  placeholder="Selecciona una fecha">
    
-                 <b> <label class="label-reserva1" for="campo3">PERSONAS:</label></b>
-               <input class="input-reserva1" type="number" id="campo3" name="campo3" max="6" placeholder="Numero de Personas (max 6), para mas llamar"> <br>
+               <!-- Agregar un campo de selección de hora que termine a las 22:00 -->
+   <b><label class="label-reserva1" for="hora">HORA DE RESERVA:</label></b>
+   <select class="input-reserva1" name="hora" id="hora" required onchange="validarHora()">
+    <option value="" disabled selected>Selecciona una hora</option>
+    <?php
+    // Genera opciones de hora de 13 a 22 en incrementos de 15 minutos
+    for ($hour = 13; $hour <= 22; $hour++) {
+        // Verifica si la hora es igual a las 22:00
+        if ($hour == 22) {
+            echo "<option value='22:00'>22:00</option>";
+        } else {
+            for ($minute = 0; $minute < 60; $minute += 15) {
+                $time = sprintf("%02d:%02d", $hour, $minute);
+                echo "<option value='$time'>$time</option>";
+            }
+        }
+    }
+    ?>
+</select>
    
-               <center><button class="button-reserva1" type="submit"><b>RESERVAR</b></button></center>
+               <label class="label-reserva1" for="campo3">PERSONAS:</label>
+               <input class="input-reserva1" type="number" id="campo3" name="personas" max="6" placeholder="Numero de Personas">
+   
+                <!-- Campo de nombre -->
+       <b><label class="label-reserva1" for="nombre">NOMBRE:</label></b>
+       <input class="input-reserva1" type="text" id="nombre" name="nombre" placeholder="Nombre del Cliente">
+            <center><button class="button-reserva1" type="submit"><b>RESERVAR</b></button></b></center> 
            </form>
-
-
 
 
 
@@ -181,8 +204,30 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
    // Establecemos la fecha actual como valor predeterminado en el input de fecha
    fechaInput.value = fechaActual;
    
-   
-   
    </script>
+      <script type="text/javascript">
+    // Función para validar la hora
+    function validarHora() {
+        var horaSeleccionada = document.getElementById("hora").value;
+        var horaActual = new Date();
+        var horaSeleccionadaParts = horaSeleccionada.split(":");
+        var horaActualParts = [horaActual.getHours(), horaActual.getMinutes()];
+
+        // Convierte las partes de la hora en números enteros
+        horaSeleccionadaParts = horaSeleccionadaParts.map(function (part) {
+            return parseInt(part);
+        });
+
+        // Compara la hora seleccionada con la hora actual
+        if (
+            horaSeleccionadaParts[0] < horaActualParts[0] ||
+            (horaSeleccionadaParts[0] === horaActualParts[0] &&
+                horaSeleccionadaParts[1] < horaActualParts[1])
+        ) {
+            alert("La hora seleccionada no puede ser anterior a la hora actual.");
+            document.getElementById("hora").value = ""; // Limpia el campo de hora
+        }
+    }
+</script>
 </body>
 </html>

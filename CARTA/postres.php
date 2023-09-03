@@ -76,13 +76,13 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
 
                     </a>
                 </li>
-                <div class="reservas">
+
                 <li class="dropdown__list">
                     <a href="../reservar/reservas.php" class="dropdown__link">
                         <span class="dropdown__span"><B>RESERVAR</B></span>
                     </a>
                 </li>
-               </div>
+
                     <?php if ($usuarioAutenticado) { ?>
                         <li class="dropdown__list">
                     <a href="#" class="dropdown__link">
@@ -120,29 +120,29 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
     </nav>
     <center>
             
-        <form class="formulario-reserva" action="/ruta/del/servidor" method="POST">
+    <form class="formulario-reserva" action="../php/realizar_reserva.php" method="POST">
             
-         <b>   <label class="label-reserva" for="campo1">RESTAURANTE:</label>
-            <select class="input-reserva" name="campo1">
-                <option value="" disabled selected>Selecciona un restaurante</option>
-                <option value="opcion1">Málaga Larios</option>
-                <option value="opcion2">Málaga Plaza Mayor</option>
-                <option value="opcion3">Marbella</option>
-                <option value="opcion4">Palma</option>
-                <option value="opcion5">Santa Ponsa</option>
-                <option value="opcion6">Festival Park</option>
-                <option value="opcion7">Porto Pi</option>
-                <!-- Agrega más opciones según tus necesidades -->
-            </select>                
-
-              <label class="label-reserva" for="campo2">FECHA:</label>
-              <input class="input-reserva" type="date" id="campo2" name="campo2"  placeholder="Selecciona una fecha">
-
-            <label class="label-reserva" for="campo3">PERSONAS:</label>
-            <input class="input-reserva" type="number" id="campo3" name="campo3" max="6" placeholder="Numero de Personas">
-
-            <button class="button-reserva" type="submit"><b>RESERVAR</b></button></b>
-        </form>
+            <b>   <label class="label-reserva" for="campo1">RESTAURANTE:</label>
+               <select class="input-reserva" name="restaurante">
+                   <option value="" disabled selected>Selecciona un restaurante</option>
+                   <option value="Málaga Larios">Málaga Larios</option>
+                   <option value="Málaga Plaza Mayor">Málaga Plaza Mayor</option>
+                   <option value="Marbella">Marbella</option>
+                   <option value="Palma">Palma</option>
+                   <option value="Santa Ponsa">Santa Ponsa</option>
+                   <option value="Festival Park">Festival Park</option>
+                   <option value="Porto Pi">Porto Pi</option>
+                   <!-- Agrega más opciones según tus necesidades -->
+               </select>                
+   
+                 <label class="label-reserva" for="campo2">FECHA:</label>
+                 <input class="input-reserva" type="date" id="campo2" name="fecha"  placeholder="Selecciona una fecha">
+   
+               <label class="label-reserva" for="campo3">PERSONAS:</label>
+               <input class="input-reserva" type="number" id="campo3" name="personas" max="6" placeholder="Numero de Personas">
+   
+               <button class="button-reserva" type="submit"><b>RESERVAR</b></button></b>
+           </form>
 
     </div> 
     </div>

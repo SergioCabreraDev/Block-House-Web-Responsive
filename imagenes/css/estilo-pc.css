@@ -1,0 +1,1750 @@
+h2{
+  font-family: 'Clarendon-Serial-Heavy';
+}
+.parraforindex{
+  font-family: 'TheSerifExtraBold';
+  text-align: justify;
+}
+footer {
+  font-family: 'TheSerifExtraBold';
+}
+#horarios1{
+  font-family: 'TheSerifExtraBold';
+  }
+#horarios{
+  font-family: 'TheSerifExtraBold';
+}
+.parrafo-direccion{
+  font-family: 'TheSerifExtraBold';
+}
+.titulocartas{
+  font-family: 'Clarendon-Serial-Heavy';
+}
+/* Estilos para resaltar campos con errores */
+.error-input {
+  border: 1px solid red;
+}
+
+.echo{
+  font-size: 324423px;
+}
+
+  @media (min-width: 1500px) {
+
+   /* Estilos generales para todo el documento */
+body {
+    font-family: 'TheSerifExtraBold';
+    margin: 0;
+    padding: 0;
+  }
+  #overlay {
+    font-size: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#entendido {
+  margin-top: 3%;
+    padding: 12px 22px;
+    border-radius: 2%;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+  .superior{
+    position: fixed;
+  }
+  /* Estilos para la barra de navegación */
+  .nav {
+    background-color: #e4e4e4;
+    color: white;
+    padding: 10px 0;
+    font-size: 17px;
+    
+    
+  }
+  
+  .nav__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .nav__title {
+    width: 35%;
+    margin: 0;
+  }
+  
+  .nav__menu {
+    display: block;
+  }
+  
+  /* Estilos para el menú desplegable */
+  .dropdown {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .dropdown__list {
+    position: relative;
+  }
+  
+  .dropdown__link {
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 15px 25px;
+  }
+  
+  .dropdown__icon {
+    width: 20px;
+    margin-right: 10px;
+  }
+  
+  .dropdown__arrow {
+    width: 20px;
+    margin-left: 5px;
+  }
+  
+  .dropdown__check {
+    display: none;
+  }
+  
+  /* Estilos para el contenido del menú desplegable */
+  .dropdown__content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #e4e4e4;
+    display: none;
+    
+  }
+  
+  .dropdown__sub {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+  }
+  
+  .dropdown__li {
+    margin-top: 3%;
+    padding: 5px 25px;
+  }
+  
+  .dropdown__anchor {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  /* Mostrar contenido del menú al hacer hover */
+  .dropdown__list:hover .dropdown__content {
+    display: block;
+  }
+  
+
+    .nav__menu {
+      display: none;
+    }
+    
+    .dropdown__check {
+      display: none;
+    }
+    
+    
+    .dropdown__list:hover .dropdown__content {
+      display: block;
+    }
+
+    /* Estilos para el formulario y campos */
+.formulario-reserva {
+  margin: 0 auto; /* Centrar el formulario en la página */
+  padding-top: 100%;
+  padding-top: 8px;
+  font-family: 'TheSerifExtraBold';
+  background-color: rgb(119, 0, 0);
+  color: white;
+}
+
+.label-reserva {
+  flex-basis: 30%; /* Ancho del label (etiqueta) */
+  margin-bottom: 10px;
+  padding-left: 25px;
+  font-size: 16px;
+}
+
+.input-reserva{
+  flex-basis: 65%; /* Ancho del input y botón */
+  margin-left: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+}
+
+.button-reserva {
+  margin-left: 30px;
+  background-color: #ffffff; /* Color de fondo rojo */
+  color: #050505; /* Color de las letras blancas */
+  border: 3px solid #000000; /* Borde blanco de 2px */
+  border-radius: 5px; /* Bordes redondos */
+  padding: 10px 20px; /* Espacio interno alrededor del texto */
+  font-size: 13px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  font-family: 'TheSerifExtraBold';
+
+}
+
+.button-reserva:hover {
+  background-color: #b80606;
+  color: #ffffff;
+}
+
+.button-reserva:active {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+
+    /* Notificacion Superior */
+.avisos{
+ 
+  font-family: 'TheSerifExtraBold';
+  background-color: red;
+  margin: 0 auto;
+  padding: 5px;
+ 
+}
+.novedades {
+  margin: 0 auto;
+  font-size:20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  opacity: 0; /* Establece la opacidad inicial en 0 */
+  transition: opacity 0.5s ease-in-out; /* Aplica una transición suave */
+
+} 
+.novedades.visible {
+  opacity: 1; /* Muestra el aviso de novedades con opacidad completa */
+}
+
+#video{
+  width: 45%;
+}
+.titulo {
+    
+  margin: 5px 0;
+}
+h1{
+  font-family: 'Clarendon-Serial-Heavy';
+  font-size: 48px;
+  color: #cf0303; /* Color del texto */
+  -webkit-text-stroke: 2px #000; /* Contorno del texto */
+  text-stroke: 2px #000; /* Contorno del texto */
+}
+#contenido{
+  margin-right: 16%;
+  margin-left: 16%;
+  margin-bottom: 5%;
+}
+.bloques{
+  margin-top: 5%;
+  font-size: 100%;
+  font-family: 'ImpressumStd-Roman';
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.bloque1{
+    display: flex;
+}
+.bloque2, .bloque3{
+    display: flex;
+    margin-top: 3%;
+    
+}
+.imagen1{
+    width: 35%;
+}
+.imagen2{
+  display: none;
+}
+.textobloque1{
+  
+    margin-right: 6%;
+    margin-left: 6%;
+}
+
+/* Estilos para el efecto de escala */
+.imagen1 {
+    transition: transform 0.3s ease;
+  }
+  
+  .imagen1:hover {
+    transform: scale(1.1); /* Ajusta el valor según el grado de agrandamiento deseado */
+  }
+
+  footer {
+    background-color:rgb(119, 0, 0);
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .footer-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+
+  .superior {
+    position: sticky;
+    top: 0; /* Mantén el contenido pegado en la parte superior */
+    background-color: white; /* Ajusta el fondo según tus necesidades */
+    z-index: 1; /* Asegúrate de que el contenido esté en un nivel superior */
+  }
+   
+  /* MALAGA LARIOS */
+  .titulo-larios{
+    padding-top: 0%;
+    font-family: 'Clarendon-Serial-Heavy';
+    text-align: center;
+    font-size: 35px;
+  }
+
+  #contenedor-larios{
+    display: flex;
+    margin-top: 3%;
+    justify-content: center;
+    gap: 5%;
+    font-family: 'Overpass-Regular';
+    background-color: #ffffff;
+  }
+
+  .foto-encargado{
+    width: 110%;
+  }
+
+  .foto-encargado-sandra{
+    width: 80%;
+  }
+  .foto-encargado-franzi{
+    width: 95%;
+  }
+
+
+  #direccion-mapa{
+    display: flex;
+  }
+
+  #horarios1{
+  display: none;
+  }
+
+  .parrafo-direccion{
+    padding-right: 1%;
+  }
+
+
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2%;
+  }
+
+  .image {
+    margin: 10px;
+  }
+
+  .image img {
+    margin-top: 5%;
+    width: 500px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: auto;
+  }
+  .imagenes-restaurantes{
+    transition: transform 0.3s ease;
+  }
+
+  .imagenes-restaurantes:hover {
+    transform: scale(1.1); /* Ajusta el valor según el grado de agrandamiento deseado */
+  }
+  #formulario-takeaway{
+    margin: 3% 23%;
+    padding: 7%;
+    background-image: url('../imagenes/photo1690807460\ \(2\).webp'); /* Ruta de la imagen que deseas usar */
+    background-size: cover; /* La imagen se ajustará al tamaño del div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del div */
+  border-radius: 2%;
+  color: white;
+  font-size: 20px;
+ 
+  }
+  .tituloparallevar{
+    font-size: 28px;
+  }
+  .button-takeaway{
+    font-family: 'TheSerifExtraBold';
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px; /* Ajusta el valor para redondear más o menos los bordes */
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .button-takeaway:hover{
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .titulocartas{
+    padding-top: 1%;
+    
+    font-size: 35px;
+  }
+
+  #contenedor-de-cartas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    margin: 6%;
+    color: white;
+    
+    padding-bottom: 9%;
+
+  }
+  .cartademenu{
+  padding: 6%;
+  background-image: url('../imagenes/menu.webp'); /* Ruta de la imagen que deseas usar */
+  background-size: cover; /* La imagen se ajustará al tamaño del div */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen dentro del div */
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+  }
+  .cartademenu:hover{
+    transform: scale(1.1); /* Al pasar el ratón, hacemos un efecto de escala para aumentar el tamaño */ 
+  }
+  .postres{
+    padding: 6%;
+    background-image: url('../imagenes/postres.webp'); /* Ruta de la imagen que deseas usar */
+    background-size: cover; /* La imagen se ajustará al tamaño del div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del div */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+    }
+    .postres:hover{
+      transform: scale(1.1); /* Al pasar el ratón, hacemos un efecto de escala para aumentar el tamaño */ 
+    }
+
+  .cartaniños{
+    padding: 6%;
+    background-image: url('../imagenes/niños.webp'); /* Ruta de la imagen que deseas usar */
+    background-size: cover; /* La imagen se ajustará al tamaño del div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del div */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+    }
+    .cartaniños:hover{
+      transform: scale(1.1); /* Al pasar el ratón, hacemos un efecto de escala para aumentar el tamaño */ 
+    }
+
+  .nuestrosvinos{
+    padding: 6%;
+    background-image: url('../imagenes/vinos.webp'); /* Ruta de la imagen que deseas usar */
+    background-size: cover; /* La imagen se ajustará al tamaño del div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del div */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+    }
+    .nuestrosvinos:hover{
+      transform: scale(1.1); /* Al pasar el ratón, hacemos un efecto de escala para aumentar el tamaño */ 
+    }
+    .menugrupo{
+    margin-left: 30%;
+    margin-right: 30%;
+      padding: 6%;
+      background-image: url('../imagenes/vinos.webp'); /* Ruta de la imagen que deseas usar */
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
+      background-position: center; /* Centra la imagen dentro del div */
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+      }
+
+  .frasecarta{
+    
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size: 20px;
+
+  }
+  .linkcartas {
+    color: white;
+    text-decoration: none; /* Opcional: para quitar el subrayado de los enlaces */
+  }
+
+ .reservas{
+  display:none;
+ }
+  .cartamenuimgvino{
+ 
+    width: 35%;
+    padding-bottom: 2%;
+  }
+
+  #contenido-grupos{
+
+   
+  }
+  .texto-grupos{
+    padding: 2%;
+    background-color: #dfdddd;
+    font-size: 18px;
+  }
+  .texto-grupos h3{
+    font-size: 28px;
+  }
+  .lista-menus{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    margin-bottom: 2%;
+    
+    
+  }
+  .menus{
+    padding: 4% 7%;
+    background-image: url('../imagenes/menu.webp');
+    border-radius: 2%;
+    font-weight: bolder;
+    background-size: cover; /* La imagen se ajustará al tamaño del div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del div */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+    color: white; 
+    
+  }
+
+  .linkmenu {
+    color: rgb(255, 255, 255);
+    /* Puedes añadir otros estilos aquí si es necesario */
+  }
+    .menus:hover{
+      transform: scale(1.1); /* Al pasar el ratón, hacemos un efecto de escala para aumentar el tamaño */ 
+    }
+
+    .cartamenugrupo{
+
+      width: 50%;
+    }
+
+   /* Estilos para el formulario de inicio de sesión */
+   .login-container {
+    margin: 3% 25%;
+    padding: 2% ;
+    padding-bottom: 3%;
+    background-color: rgb(253, 211, 183);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'TheSerifExtraBold';
+    font-size: 20px;
+    margin-bottom: 13%;
+  }
+
+
+
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .login-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .botonlogin {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'TheSerifExtraBold';
+  }
+
+  .botonlogin:hover {
+    background-color: #018a08;
+  }
+
+  .botoneslogin{
+    display: flex;
+ 
+    align-items: center;
+    justify-content: center;
+
+  }
+   .registro{
+    margin-top: 5%;
+    align-items: center;
+   }
+   .botonregistro{
+    background-color: #7e0202;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'TheSerifExtraBold';
+   }
+   .botonregistro:hover {
+    background-color: #4b0000;
+  }
+
+    .formulario1-reserva{
+      background-color: rgb(253, 211, 183);
+      padding: 3% 3%;
+      margin: 5% 28%;
+      margin-bottom: 6%;
+      font-family: 'TheSerifExtraBold';
+  
+    }
+    .tituloreservas{
+      font-size: 30px;
+    }
+    .label-reserva1{
+      margin-top: 3%;
+      display: flex;
+      flex-direction: column;
+    }
+    .input-reserva1{ 
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .button-reserva1 {
+      margin-top: 2%;
+      background-color: #ffffff; /* Color de fondo rojo */
+      color: #050505; /* Color de las letras blancas */
+      border: 2px solid #000000; /* Borde blanco de 2px */
+      border-radius: 3px; /* Bordes redondos */
+      padding: 10px 20px; /* Espacio interno alrededor del texto */
+      font-size: 13px; /* Tamaño de fuente */
+      cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+      font-family: 'TheSerifExtraBold';
+    }
+    
+    .button-reserva1:hover {
+      background-color:  rgb(252, 158, 96);
+      color: #000000;
+    }
+    
+    .button-reserva1:active {
+      background-color: #ff0000;
+      color: #ffffff;
+    }
+    
+    #formulario-takeaway1{
+      display: none;
+    }
+/* Estilos para el botón de cierre de sesión */
+.boton-cerrar-sesion {
+
+  background-color: #FF0000; /* Color rojo */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.boton-cerrar-sesion:hover {
+  background-color: #CC0000; /* Cambia el color al pasar el cursor sobre el botón */
+}
+
+.error-messagephp {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  max-width: 80%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.notificaciones{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 20%;
+}
+.formulario-noti{
+  font-size: 20px;
+}
+.formulario-noti button {
+  margin-top: 1%;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 12px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  
+}
+
+.formulario-noti button:hover {
+  background-color: black;
+  color: white;
+}
+
+#contenido_factura{
+  margin: 5%;
+  font-size: 20px;
+}
+.formulario_factura button {
+  margin-top: 1%;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'TheSerifExtraBold';
+}
+
+.formulario_factura button:hover {
+  background-color: black;
+  color: white;
+}
+
+.input-factura{
+  margin-right: 2%;
+  margin-left: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000000;
+  border-radius: 3px;
+}
+.input-factura2{
+margin-top: 0.5%;
+}
+.br_pantallapequeña{
+display: none;
+}
+.br_pantallaipad{
+  display: none;
+  }
+  
+  #eliminar-form{
+    margin-top: 10%;
+    align-items: center;
+    text-align: center;
+  }
+/* Declara la fuente personalizada */
+@font-face {
+  font-family: 'Clarendon-Serial-Heavy';
+  src: url('../assets/fonts/Clarendon-Serial-Heavy\ Regular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Declara la fuente personalizada */
+@font-face {
+font-family: 'ImpressumStd-Roman';
+src: url('../assets/fonts/ImpressumStd-Bold.otf') format('opentype');
+font-weight: normal;
+font-style: normal;
+}
+
+/* Declara la fuente personalizada */
+@font-face {
+font-family: 'Overpass-Regular';
+src: url('../assets/fonts/Overpass-Regular.ttf') format('opentype');
+font-weight: normal;
+font-style: normal;
+}
+
+/* Declara la fuente personalizada */
+@font-face {
+  font-family: 'TheSerifExtraBold';
+  src: url('../assets/fonts/TheSerifExtraBold-Plain.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (min-width: 1024px) and (max-width: 1500px) {
+   /* Estilos generales para todo el documento */
+   body {
+     
+    font-family: 'TheSerifExtraBold';
+    margin: 0;
+    padding: 0;
+  }
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#entendido {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+  .superior{
+    position: fixed;
+  }
+  #formulario-takeaway1{
+    display: none;
+  }
+  /* Estilos para la barra de navegación */
+  .nav {
+    background-color: #e4e4e4;
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  
+  .nav__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .nav__title {
+    width: 20%;
+    margin: 0;
+  }
+  
+  .nav__menu {
+    display: block;
+  }
+  
+  /* Estilos para el menú desplegable */
+  .dropdown {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .dropdown__list {
+    position: relative;
+  }
+  
+  .dropdown__link {
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 15px 25px;
+  }
+  
+  .dropdown__icon {
+    width: 20px;
+    margin-right: 10px;
+  }
+  
+  .dropdown__arrow {
+    width: 20px;
+    margin-left: 5px;
+  }
+  
+  .dropdown__check {
+    display: none;
+  }
+  
+  /* Estilos para el contenido del menú desplegable */
+  .dropdown__content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #e4e4e4;
+    display: none;
+    
+  }
+  
+  .dropdown__sub {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+  }
+  
+  .dropdown__li {
+    padding: 5px 20px;
+  }
+  
+  .dropdown__anchor {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  /* Mostrar contenido del menú al hacer hover */
+  .dropdown__list:hover .dropdown__content {
+    display: block;
+  }
+  
+
+    .nav__menu {
+      display: none;
+    }
+    
+    .dropdown__check {
+      display: none;
+    }
+    
+    
+    .dropdown__list:hover .dropdown__content {
+      display: block;
+    }
+
+    /* Estilos para el formulario y campos */
+.formulario-reserva {
+
+  margin: 0 auto; /* Centrar el formulario en la página */
+  padding-top: 100%;
+  padding-top: 8px;
+  font-family: 'TheSerifExtraBold';
+  background-color: rgb(119, 0, 0);
+  color: white;
+}
+
+.label-reserva {
+  flex-basis: 30%; /* Ancho del label (etiqueta) */
+  margin-bottom: 10px;
+  padding-left: 25px;
+  font-size: 14px;
+}
+
+.input-reserva{
+  flex-basis: 65%; /* Ancho del input y botón */
+  margin-left: 4px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+}
+
+.button-reserva {
+  margin-left: 30px;
+  background-color: #ffffff; /* Color de fondo rojo */
+  color: #050505; /* Color de las letras blancas */
+  border: 3px solid #000000; /* Borde blanco de 2px */
+  border-radius: 5px; /* Bordes redondos */
+  padding: 8px 18px; /* Espacio interno alrededor del texto */
+  font-size: 13px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  font-family: 'TheSerifExtraBold';
+}
+
+.button-reserva:hover {
+  background-color: #b80606;
+  color: #ffffff;
+}
+
+.button-reserva:active {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+
+    /* Notificacion Superior */
+.avisos{
+
+  background-color: red;
+  margin: 0 auto;
+  padding: 5px;
+  font-family: 'TheSerifExtraBold';
+}
+.novedades {
+  margin: 0 auto;
+  font-size:16px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  opacity: 0; /* Establece la opacidad inicial en 0 */
+  transition: opacity 0.5s ease-in-out; /* Aplica una transición suave */
+
+} 
+.novedades.visible {
+  opacity: 1; /* Muestra el aviso de novedades con opacidad completa */
+}
+
+#video{
+  width: 45%;
+}
+.titulo {
+    
+  margin: 5px 0;
+}
+h1{
+  font-family: 'Clarendon-Serial-Heavy';
+  font-size: 48px;
+  color: #cf0303; /* Color del texto */
+  -webkit-text-stroke: 2px #000; /* Contorno del texto */
+  text-stroke: 2px #000; /* Contorno del texto */
+}
+#contenido{
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+.bloques{
+  margin-top: 5%;
+  font-size: 100%;
+  font-family: 'ImpressumStd-Roman';
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.bloque1{
+    display: flex;
+}
+.bloque2, .bloque3{
+    display: flex;
+    margin-top: 3%;
+    
+}
+.imagen1{
+    width: 38%;
+}
+.imagen2{
+  display: none;
+}
+.textobloque1{
+  
+    margin-right: 6%;
+    margin-left: 6%;
+}
+/* Estilos para el efecto de escala */
+.imagen1 {
+    transition: transform 0.3s ease;
+  }
+  
+  .imagen1:hover {
+    transform: scale(1.1); /* Ajusta el valor según el grado de agrandamiento deseado */
+  }
+
+  footer {
+    background-color:rgb(119, 0, 0);
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .footer-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+
+  .superior {
+    position: sticky;
+    top: 0; /* Mantén el contenido pegado en la parte superior */
+    background-color: white; /* Ajusta el fondo según tus necesidades */
+    z-index: 1; /* Asegúrate de que el contenido esté en un nivel superior */
+  }
+
+
+  /* MALAGA LARIOS */
+  .titulo-larios{
+    padding-top: 0%;
+    font-family: 'Clarendon-Serial-Heavy';
+    text-align: center;
+    font-size: 35px;
+  }
+
+  #contenedor-larios{
+    display: flex;
+    margin-top: 3%;
+    justify-content: center;
+    gap: 90px;
+    font-family: 'Overpass-Regular';
+    background-color: #ffffff;
+  }
+
+  .foto-encargado{
+    width: 110%;
+  }
+
+  .foto-encargado-sandra{
+    width: 80%;
+  }
+  .foto-encargado-franzi{
+    width: 95%;
+  }
+
+
+  #direccion-mapa{
+    display: flex;
+  }
+
+  #horarios{
+
+  }
+
+  .parrafo-direccion{
+    padding-right: 1%;
+  }
+
+
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2%;
+  }
+
+  .image {
+    margin: 10px;
+  }
+
+  .image img {
+    margin-top: 5%;
+    width: 500px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: auto;
+  }
+  .imagenes-restaurantes{
+    transition: transform 0.3s ease;
+  }
+
+  .imagenes-restaurantes:hover {
+    transform: scale(1.1); /* Ajusta el valor según el grado de agrandamiento deseado */
+  }
+   /* MALAGA LARIOS */
+   .titulo-larios{
+    padding-top: 0%;
+    font-family: 'Clarendon-Serial-Heavy';
+    text-align: center;
+    font-size: 35px;
+  }
+
+  #contenedor-larios{
+    display: flex;
+    margin-top: 3%;
+    justify-content: center;
+    gap: 5%;
+    font-family: 'Overpass-Regular';
+    background-color: #ffffff;
+  }
+
+  .foto-encargado{
+    width: 110%;
+  }
+
+  .foto-encargado-sandra{
+    width: 80%;
+  }
+  .foto-encargado-franzi{
+    width: 95%;
+  }
+
+
+  #direccion-mapa{
+    display: flex;
+  }
+
+  #horarios1{
+  display: none;
+  }
+
+  .parrafo-direccion{
+    padding-right: 1%;
+  }
+
+
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2%;
+  }
+
+  .image {
+    margin: 10px;
+  }
+
+  .image img {
+    margin-top: 5%;
+    width: 500px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: auto;
+  }
+  .imagenes-restaurantes{
+    transition: transform 0.3s ease;
+  }
+
+  .imagenes-restaurantes:hover {
+    transform: scale(1.1); /* Ajusta el valor según el grado de agrandamiento deseado */
+  }
+  
+  #formulario-takeaway{
+    margin: 5% 16%;
+    padding: 7%;
+    background-image: url('../imagenes/photo1690807460\ \(2\).webp'); /* Ruta de la imagen que deseas usar */
+    background-size: cover; /* La imagen se ajustará al tamaño del div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del div */
+  border-radius: 2%;
+  color: white;
+  font-size: 20px;
+  
+  
+  }
+
+  .button-takeaway{
+    font-family: 'TheSerifExtraBold';
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px; /* Ajusta el valor para redondear más o menos los bordes */
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .button-takeaway:hover{
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .titulocartas{
+    padding-top: 1%;
+   
+    font-size: 35px;
+  }
+  .reservas{
+    display:none;
+   }
+
+  #contenedor-de-cartas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    margin: 6%;
+    color: white;
+ 
+    padding-bottom: 13%;
+
+  }
+  .cartademenu{
+  padding: 6%;
+  background-image: url('../imagenes/menu.webp'); /* Ruta de la imagen que deseas usar */
+  background-size: cover; /* La imagen se ajustará al tamaño del div */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen dentro del div */
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+  }
+  .cartademenu:hover{
+    transform: scale(1.1); /* Al pasar el ratón, hacemos un efecto de escala para aumentar el tamaño */ 
+  }
+  .postres{
+    padding: 7%;
+    background-image: url('../imagenes/postres.webp'); /* Ruta de la imagen que deseas usar */
+    background-size: cover; /* La imagen se ajustará al tamaño del div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del div */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+    }
+    .postres:hover{
+      transform: scale(1.1); /* Al pasar el ratón, hacemos un efecto de escala para aumentar el tamaño */ 
+    }
+
+  .cartaniños{
+    padding: 6%;
+    background-image: url('../imagenes/niños.webp'); /* Ruta de la imagen que deseas usar */
+    background-size: cover; /* La imagen se ajustará al tamaño del div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del div */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+    }
+    .cartaniños:hover{
+      transform: scale(1.1); /* Al pasar el ratón, hacemos un efecto de escala para aumentar el tamaño */ 
+    }
+
+  .nuestrosvinos{
+    padding: 6%;
+    background-image: url('../imagenes/vinos.webp'); /* Ruta de la imagen que deseas usar */
+    background-size: cover; /* La imagen se ajustará al tamaño del div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del div */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+    }
+    .nuestrosvinos:hover{
+      transform: scale(1.1); /* Al pasar el ratón, hacemos un efecto de escala para aumentar el tamaño */ 
+    }
+    .menugrupo{
+    margin-left: 30%;
+    margin-right: 30%;
+      padding: 6%;
+      background-image: url('../imagenes/vinos.webp'); /* Ruta de la imagen que deseas usar */
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
+      background-position: center; /* Centra la imagen dentro del div */
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+      }
+
+  .frasecarta{
+    
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size: 20px;
+  }
+  .linkcartas {
+    color: white;
+    text-decoration: none; /* Opcional: para quitar el subrayado de los enlaces */
+  }
+
+  .cartamenuimg{
+    
+  }
+  .cartamenuimgvino{
+ 
+    width: 35%;
+    padding-bottom: 2%;
+  }
+
+ 
+  .texto-grupos{
+    padding: 5%;
+    background-color: #dfdddd;
+    font-size: 18px;
+  }
+  .texto-grupos h3{
+    font-size: 28px;
+  }
+  .lista-menus{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    margin-bottom: 20%;
+    
+    
+  }
+  .menus{
+    padding: 4% 7%;
+    background-image: url('../imagenes/menu.webp');
+    border-radius: 2%;
+    font-weight: bolder;
+    background-size: cover; /* La imagen se ajustará al tamaño del div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del div */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease; /* Aplicamos una transición suave al cambio de la propiedad "transform" */
+    color: white; 
+    
+  }
+
+  .linkmenu {
+    color: rgb(255, 255, 255);
+    /* Puedes añadir otros estilos aquí si es necesario */
+  }
+    .menus:hover{
+      transform: scale(1.1); /* Al pasar el ratón, hacemos un efecto de escala para aumentar el tamaño */ 
+    }
+
+    .cartamenugrupo{
+
+      width: 50%;
+    }
+
+    .margenes-login{
+      margin: 4%;
+    }
+    .formulario1-reserva{
+      background-color: rgb(253, 211, 183);
+      padding: 3% 3%;
+      margin: 5% 30%;
+      margin-bottom: 15%;
+      font-family: 'TheSerifExtraBold';
+  
+    }
+    .tituloreservas{
+      font-size: 30px;
+    }
+    .label-reserva1{
+      margin-top: 3%;
+      display: flex;
+      flex-direction: column;
+    }
+    .input-reserva1{ 
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .button-reserva1 {
+      margin-top: 2%;
+      background-color: #ffffff; /* Color de fondo rojo */
+      color: #050505; /* Color de las letras blancas */
+      border: 2px solid #000000; /* Borde blanco de 2px */
+      border-radius: 3px; /* Bordes redondos */
+      padding: 10px 20px; /* Espacio interno alrededor del texto */
+      font-size: 13px; /* Tamaño de fuente */
+      cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+      font-family: 'TheSerifExtraBold';
+    }
+    
+    .button-reserva1:hover {
+      background-color:  rgb(252, 158, 96);
+      color: #000000;
+    }
+    
+    .button-reserva1:active {
+      background-color: #ff0000;
+      color: #ffffff;
+    }
+      /* Estilos para el formulario de inicio de sesión */
+   .login-container {
+    margin: 3% 25%;
+    padding: 1% 7%;
+    padding-bottom: 3%;
+    background-color: rgb(253, 211, 183);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'TheSerifExtraBold';
+    font-size: 20px;
+    margin-bottom: 20%;
+  }
+
+
+
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .login-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .botonlogin {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'TheSerifExtraBold';
+  }
+
+  .botonlogin:hover {
+    background-color: #018a08;
+  }
+
+  .botoneslogin{
+    display: flex;
+ 
+    align-items: center;
+    justify-content: center;
+
+  }
+   .registro{
+    margin-top: 5%;
+    align-items: center;
+   }
+   .botonregistro{
+    background-color: #7e0202;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'TheSerifExtraBold';
+   }
+   .botonregistro:hover {
+    background-color: #4b0000;
+  }
+  /* Estilos para el botón de cierre de sesión */
+
+/* Estilos para el botón de cierre de sesión */
+.boton-cerrar-sesion {
+  margin-top: 10%;
+  background-color: #FF0000; /* Color rojo */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.boton-cerrar-sesion:hover {
+  background-color: #CC0000; /* Cambia el color al pasar el cursor sobre el botón */
+}
+
+.notificaciones{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 20%;
+}
+.formulario-noti{
+  font-size: 20px;
+}
+.formulario-noti button {
+  margin-top: 1%;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 12px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.formulario-noti button:hover {
+  background-color: black;
+  color: white;
+}
+#contenido_factura{
+  margin: 5%;
+  font-size: 22px;
+}
+
+.formulario_factura button {
+  margin-top: 1%;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 17px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'TheSerifExtraBold';
+}
+
+.formulario_factura button:hover {
+  background-color: black;
+  color: white;
+}
+
+.input-factura{
+  margin-right: 2%;
+  margin-left: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000000;
+  border-radius: 3px;
+}
+.input-factura2{
+margin-top: 0.5%;
+}
+.br_pantallaipad{
+  display: none;
+  }
+/* Declara la fuente personalizada */
+@font-face {
+  font-family: 'Clarendon-Serial-Heavy';
+  src: url('../assets/fonts/Clarendon-Serial-Heavy\ Regular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Declara la fuente personalizada */
+@font-face {
+font-family: 'ImpressumStd-Roman';
+src: url('../assets/fonts/ImpressumStd-Bold.otf') format('opentype');
+font-weight: normal;
+font-style: normal;
+}
+
+/* Declara la fuente personalizada */
+@font-face {
+font-family: 'Overpass-Regular';
+src: url('../assets/fonts/Overpass-Regular.ttf') format('opentype');
+font-weight: normal;
+font-style: normal;
+}
+
+/* Declara la fuente personalizada */
+@font-face {
+  font-family: 'TheSerifExtraBold';
+  src: url('../assets/fonts/TheSerifExtraBold-Plain.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+  }
+  
+    
+  
+      

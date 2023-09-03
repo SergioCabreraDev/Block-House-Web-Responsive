@@ -75,7 +75,7 @@ body {
     background-color: #e4e4e4;
     color: white;
     padding: 10px 0;
-    font-size: 17px;
+    font-size: 15px;
     
     
   }
@@ -90,7 +90,7 @@ body {
   }
   
   .nav__title {
-    width: 35%;
+    width: 28%;
     margin: 0;
   }
   
@@ -236,18 +236,7 @@ body {
   padding: 5px;
  
 }
-.novedades {
-  margin: 0 auto;
-  font-size:20px;
-  background-color: #f1f1f1;
-  border-radius: 8px;
-  opacity: 0; /* Establece la opacidad inicial en 0 */
-  transition: opacity 0.5s ease-in-out; /* Aplica una transición suave */
 
-} 
-.novedades.visible {
-  opacity: 1; /* Muestra el aviso de novedades con opacidad completa */
-}
 
 #video{
   width: 45%;
@@ -428,7 +417,14 @@ h1{
   .tituloparallevar{
     font-size: 28px;
   }
+
+  .center-button{
+    align-items: center;
+    text-align: center;
+  }
   .button-takeaway{
+ 
+    text-decoration: none; /* Esto elimina el subrayado predeterminado */
     font-family: 'TheSerifExtraBold';
     display: inline-block;
     padding: 10px 20px;
@@ -438,9 +434,13 @@ h1{
     color: white;
     font-size: 16px;
     cursor: pointer;
+    
+  
   }
 
+
   .button-takeaway:hover{
+ 
     background-color: white;
     color: black;
     transition: background-color 0.3s, color 0.3s;
@@ -743,6 +743,7 @@ h1{
 }
 
 .error-messagephp {
+  font-size: 25px;
   background-color: #f2f2f2;
   border: 1px solid #ccc;
   padding: 10px;
@@ -827,6 +828,145 @@ display: none;
     align-items: center;
     text-align: center;
   }
+  .novedades1 {
+    margin: 0 auto;
+    font-size:16px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+  
+  } 
+  .menu {
+    display: flex;   
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.menu-item {
+    background-color: #ffd391;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+}
+
+.menu-item h2 {
+    margin-top: 0;
+}
+
+.menu-item p {
+    margin-bottom: 0;
+}
+
+.menu select{
+  margin-top: 3%;
+  padding: 1% 7%;
+  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  font-family: 'TheSerifExtraBold';
+}
+
+.menu-item-price {
+  font-family: 'TheSerifExtraBold';
+    color: #ff6600;
+}
+ .menu button{
+  font-family: 'TheSerifExtraBold';
+  background-color: #ffffff;
+  padding: 10px;
+  border: 2px solid #000000;
+  color: rgb(5, 5, 5);
+  margin-top: 3%;
+ }
+ .menu button:hover{
+  background-color: rgb(40, 190, 3);
+    color: rgb(255, 255, 255);
+    border: 2px solid  #ffd391;
+    transition: background-color 0.3s, color 0.3s;
+ }
+
+ .parte-superior{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3%;
+  gap: 10%;
+ }
+
+ #carrito{
+  padding: 1% 2%;
+  border: 0.5px solid #000000;
+  margin: 3% 20%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  
+ }
+ #carrito div{
+  display: flex;
+  
+ }
+ #carrito p{
+  font-size: 20px;
+  
+ }
+ .boton-eliminar {
+  font-family: 'TheSerifExtraBold';
+  background-color: #ffffff;
+  padding: 5px 15px;
+  border: 2px solid #000000;
+  color: rgb(5, 5, 5);
+  margin-left:1%;
+}
+.boton-eliminar:hover {
+  background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid  #f8f8f8;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#enviar-pedido{
+  font-family: 'TheSerifExtraBold';
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border: 2px solid #000000;
+  color: rgb(5, 5, 5);
+  margin-top: 1%;
+}
+#enviar-pedido:hover{
+  background-color: rgb(40, 190, 3);
+    color: rgb(255, 255, 255);
+    border: 2px solid  #f8f8f8;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+ .codigo{
+
+  text-decoration: none;
+  font-family: 'TheSerifExtraBold';
+  background-color: #ffffff;
+  padding: 5px;
+  font-size: 20px;
+  border: 2px solid #000000;
+  color: rgb(5, 5, 5);
+  margin-top: 3%;
+ }
+ .codigo:hover{
+  background-color: rgb(40, 190, 3);
+    color: rgb(255, 255, 255);
+    border: 2px solid  #000000;
+    transition: background-color 0.3s, color 0.3s;
+ }
+
+ .titulo-carrito{
+  font-size: 30px;
+}
+
+
+
 /* Declara la fuente personalizada */
 @font-face {
   font-family: 'Clarendon-Serial-Heavy';
@@ -920,7 +1060,7 @@ font-style: normal;
     background-color: #e4e4e4;
     color: white;
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 14px;
   }
   
   .nav__container {
@@ -929,11 +1069,11 @@ font-style: normal;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 40px;
   }
   
   .nav__title {
-    width: 27%;
+    width: 20%;
     margin: 0;
   }
   
@@ -1034,13 +1174,13 @@ font-style: normal;
   flex-basis: 30%; /* Ancho del label (etiqueta) */
   margin-bottom: 10px;
   padding-left: 25px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .input-reserva{
   flex-basis: 65%; /* Ancho del input y botón */
   margin-left: 4px;
-  padding: 10px;
+  padding: 8px;
   margin-bottom: 10px;
   border: 1px solid #ffffff;
   border-radius: 3px;
@@ -1052,7 +1192,7 @@ font-style: normal;
   color: #050505; /* Color de las letras blancas */
   border: 3px solid #000000; /* Borde blanco de 2px */
   border-radius: 5px; /* Bordes redondos */
-  padding: 10px 20px; /* Espacio interno alrededor del texto */
+  padding: 8px 18px; /* Espacio interno alrededor del texto */
   font-size: 13px; /* Tamaño de fuente */
   cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
   font-family: 'TheSerifExtraBold';
@@ -1077,17 +1217,11 @@ font-style: normal;
   padding: 5px;
   font-family: 'TheSerifExtraBold';
 }
-.novedades {
+.novedades1 {
   margin: 0 auto;
-  font-size:20px;
+  font-size:16px;
   background-color: #f1f1f1;
   border-radius: 8px;
-  opacity: 0; /* Establece la opacidad inicial en 0 */
-  transition: opacity 0.5s ease-in-out; /* Aplica una transición suave */
-
-} 
-.novedades.visible {
-  opacity: 1; /* Muestra el aviso de novedades con opacidad completa */
 }
 
 #video{
@@ -1335,7 +1469,12 @@ h1{
   
   }
 
+  .center-button{
+    align-items: center;
+    text-align: center;
+  }
   .button-takeaway{
+    text-decoration: none;
     font-family: 'TheSerifExtraBold';
     display: inline-block;
     padding: 10px 20px;
@@ -1557,7 +1696,7 @@ h1{
       /* Estilos para el formulario de inicio de sesión */
    .login-container {
     margin: 3% 25%;
-    padding: 5% 10%;
+    padding: 1% 7%;
     padding-bottom: 3%;
     background-color: rgb(253, 211, 183);
     border-radius: 5px;
@@ -1711,6 +1850,58 @@ margin-top: 0.5%;
 .br_pantallaipad{
   display: none;
   }
+  .menu {
+    display: flex;   
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.menu-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+}
+
+.menu-item h2 {
+    margin-top: 0;
+}
+
+.menu-item p {
+    margin-bottom: 0;
+}
+
+.menu select{
+  margin-top: 3%;
+  padding: 1% 7%;
+  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  font-family: 'TheSerifExtraBold';
+}
+
+.menu-item-price {
+  font-family: 'TheSerifExtraBold';
+    color: #ff6600;
+}
+ .menu button{
+  font-family: 'TheSerifExtraBold';
+  background-color: #ffffff;
+  padding: 10px;
+  border: 2px solid #000000;
+  color: rgb(5, 5, 5);
+  margin-top: 3%;
+ }
+ .menu button:hover{
+  background-color: rgb(40, 190, 3);
+    color: rgb(255, 255, 255);
+    border: 2px solid #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+ }
 /* Declara la fuente personalizada */
 @font-face {
   font-family: 'Clarendon-Serial-Heavy';

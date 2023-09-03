@@ -259,18 +259,16 @@
     padding: 5px;
     
   }
-  .novedades {
+  .novedades1 {
     margin: 0 auto;
-    font-size:15px;
+    font-size:14.5px;
     background-color: #f1f1f1;
     border-radius: 8px;
-    opacity: 0; /* Establece la opacidad inicial en 0 */
-    transition: opacity 0.5s ease-in-out; /* Aplica una transición suave */
-  
-  } 
-  .novedades.visible {
-    opacity: 1; /* Muestra el aviso de novedades con opacidad completa */
-  }
+      }
+      .center-button{
+        align-items: center;
+        text-align: center;
+      }
 
   #contenido{
     margin-right: 3%;

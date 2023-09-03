@@ -76,13 +76,13 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
 
                     </a>
                 </li>
-                <div class="reservas">
+            
                 <li class="dropdown__list">
                     <a href="../reservar/reservas.php" class="dropdown__link">
                         <span class="dropdown__span"><B>RESERVAR</B></span>
                     </a>
                 </li>
-               </div>
+          
                     <?php if ($usuarioAutenticado) { ?>
                         <li class="dropdown__list">
                     <a href="#" class="dropdown__link">
@@ -120,29 +120,52 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
     </nav>
     <center>
             
-        <form class="formulario-reserva" action="/ruta/del/servidor" method="POST">
+    <form class="formulario-reserva" action="../php/realizar_reserva.php" method="POST">
             
-         <b>   <label class="label-reserva" for="campo1">RESTAURANTE:</label>
-            <select class="input-reserva" name="campo1">
+    <b>   <label class="label-reserva" for="campo1">RESTAURANTE:</label>
+            <select class="input-reserva" name="restaurante">
                 <option value="" disabled selected>Selecciona un restaurante</option>
-                <option value="opcion1">Málaga Larios</option>
-                <option value="opcion2">Málaga Plaza Mayor</option>
-                <option value="opcion3">Marbella</option>
-                <option value="opcion4">Palma</option>
-                <option value="opcion5">Santa Ponsa</option>
-                <option value="opcion6">Festival Park</option>
-                <option value="opcion7">Porto Pi</option>
+                <option value="malaga_larios">Málaga Larios</option>
+                <option value="malaga_plaza_mayor">Málaga Plaza Mayor</option>
+                <option value="marbella">Marbella</option>
+                <option value="palma">Palma</option>
+                <option value="santa_ponsa">Santa Ponsa</option>
+                <option value="festival_park">Festival Park</option>
+                <option value="porto_pi">Porto Pi</option>
                 <!-- Agrega más opciones según tus necesidades -->
             </select>                
 
               <label class="label-reserva" for="campo2">FECHA:</label>
-              <input class="input-reserva" type="date" id="campo2" name="campo2"  placeholder="Selecciona una fecha">
+              <input class="input-reserva" type="date" id="campo2" name="fecha"  placeholder="Selecciona una fecha">
+
+            <!-- Agregar un campo de selección de hora que termine a las 22:00 -->
+<b><label class="label-reserva" for="hora">HORA DE RESERVA:</label></b>
+<select class="input-reserva" name="hora" id="hora">
+    <option value="" disabled selected>Selecciona una hora</option>
+    <?php
+    // Genera opciones de hora de 13 a 22 en incrementos de 15 minutos
+    for ($hour = 13; $hour <= 22; $hour++) {
+        // Verifica si la hora es igual a las 22:00
+        if ($hour == 22) {
+            echo "<option value='22:00'>22:00</option>";
+        } else {
+            for ($minute = 0; $minute < 60; $minute += 15) {
+                $time = sprintf("%02d:%02d", $hour, $minute);
+                echo "<option value='$time'>$time</option>";
+            }
+        }
+    }
+    ?>
+</select>
 
             <label class="label-reserva" for="campo3">PERSONAS:</label>
-            <input class="input-reserva" type="number" id="campo3" name="campo3" max="6" placeholder="Numero de Personas">
+            <input class="input-reserva" type="number" id="campo3" name="personas" max="6" placeholder="Numero de Personas">
 
+             <!-- Campo de nombre -->
+    <b><label class="label-reserva" for="nombre">NOMBRE:</label></b>
+    <input class="input-reserva" type="text" id="nombre" name="nombre" placeholder="Nombre del Cliente">
             <button class="button-reserva" type="submit"><b>RESERVAR</b></button></b>
-        </form>
+           </form>
 
     </div> 
     </div>
@@ -169,7 +192,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
                 Viernes:	12:00-23:00<br>
                 Sabado:	12:30-23:00<br>
                 Domingo:	12:00-22:30<br>
-                    <b>Reserva Online <a href="#">clic AQUI</a></p></b>
+                <b>Reserva Online <a href="../reservar/reservas.php">clic AQUI</a></p></b>
             </div>            
         </div>
         <div id="direccion-mapa">
@@ -189,7 +212,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
             Viernes:	12:00-23:00<br>
             Sabado:	12:30-23:00<br>
             Domingo:	12:00-22:30<br>
-                <b>Reserva Online <a href="#">clic AQUI</a></p></b>
+                <b>Reserva Online <a href="../reservar/reservas.php">clic AQUI</a></p></b>
         </div>
 </div>
     <div class="gallery">

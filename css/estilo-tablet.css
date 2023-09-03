@@ -249,6 +249,10 @@
       background-color: #ff0000;
       color: #ffffff;
     }
+    .center-button{
+      align-items: center;
+      text-align: center;
+    }
      /* Notificacion Superior */
      .avisos{
       background-color: red;
@@ -257,18 +261,12 @@
       font-family: 'TheSerifExtraBold';
       
     }
-    .novedades {
+    .novedades1 {
       margin: 0 auto;
       font-size:15px;
       background-color: #f1f1f1;
       border-radius: 8px;
-      opacity: 0; /* Establece la opacidad inicial en 0 */
-      transition: opacity 0.5s ease-in-out; /* Aplica una transición suave */
-    
-    } 
-    .novedades.visible {
-      opacity: 1; /* Muestra el aviso de novedades con opacidad completa */
-    }
+         }
   
     #contenido{
       margin-right: 3%;
