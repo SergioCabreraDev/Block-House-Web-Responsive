@@ -612,7 +612,11 @@ h1{
     margin-bottom: 13%;
   }
 
-
+  .label-reserva2{
+    
+    display: flex;
+    flex-direction: column;
+  }
 
   .login-container h2 {
     text-align: center;
@@ -964,7 +968,9 @@ display: none;
  .titulo-carrito{
   font-size: 30px;
 }
-
+.menu1{
+  display: none;
+ }
 
 
 /* Declara la fuente personalizada */
@@ -1850,21 +1856,24 @@ margin-top: 0.5%;
 .br_pantallaipad{
   display: none;
   }
+
+
   .menu {
     display: flex;   
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
     
 }
 
 .menu-item {
-    background-color: #fff;
+    background-color: #ffd391;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+    margin: 3px;
     padding: 20px;
     width: 300px;
+    
 }
 
 .menu-item h2 {
@@ -1877,11 +1886,116 @@ margin-top: 0.5%;
 
 .menu select{
   margin-top: 3%;
-  padding: 1% 7%;
+  padding: 1% 9%;
   
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
   font-family: 'TheSerifExtraBold';
+}
+
+.menu-item-price {
+  font-family: 'TheSerifExtraBold';
+    color: #ff6600;
+}
+ .menu button{
+  font-family: 'TheSerifExtraBold';
+  background-color: #ffffff;
+  padding: 10px;
+  border: 2px solid #000000;
+  color: rgb(5, 5, 5);
+  margin-top: 3%;
+ }
+ .menu button:hover{
+  background-color: rgb(40, 190, 3);
+    color: rgb(255, 255, 255);
+    border: 2px solid  #ffd391;
+    transition: background-color 0.3s, color 0.3s;
+ }
+
+ .parte-superior{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3%;
+  gap: 10%;
+  margin: 0% 4%;
+ }
+ .menu1{
+  display: none;
+ }
+
+ #carrito{
+  padding: 1% 2%;
+  border: 0.5px solid #000000;
+  margin: 3% 20%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  
+ }
+ #carrito div{
+  display: flex;
+  
+ }
+ #carrito p{
+  font-size: 20px;
+  
+ }
+ .boton-eliminar {
+  font-family: 'TheSerifExtraBold';
+  background-color: #ffffff;
+  padding: 5px 15px;
+  border: 2px solid #000000;
+  color: rgb(5, 5, 5);
+  margin-left:1%;
+}
+.boton-eliminar:hover {
+  background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid  #f8f8f8;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#enviar-pedido{
+  font-family: 'TheSerifExtraBold';
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border: 2px solid #000000;
+  color: rgb(5, 5, 5);
+  margin-top: 1%;
+}
+#enviar-pedido:hover{
+  background-color: rgb(40, 190, 3);
+    color: rgb(255, 255, 255);
+    border: 2px solid  #f8f8f8;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+ .codigo{
+
+  text-decoration: none;
+  font-family: 'TheSerifExtraBold';
+  background-color: #ffffff;
+  padding: 5px;
+  font-size: 20px;
+  border: 2px solid #000000;
+  color: rgb(5, 5, 5);
+  margin-top: 3%;
+ }
+ .codigo:hover{
+  background-color: rgb(40, 190, 3);
+    color: rgb(255, 255, 255);
+    border: 2px solid  #000000;
+    transition: background-color 0.3s, color 0.3s;
+ }
+
+ .titulo-carrito{
+  font-size: 25px;
+}
+.label-reserva2{
+    
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-item-price {

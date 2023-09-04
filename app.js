@@ -51,27 +51,35 @@ function eliminarDelCarrito(index) {
 }
 
 
-function validarCarrito() {
-    // Obtén la longitud del carrito
+function validarCarrito(event) {
+    // Obtiene la longitud del carrito
     const cantidadProductos = carrito.length;
 
     // Verifica si el carrito está vacío
     if (cantidadProductos === 0) {
-        alert("El carrito está vacío. Debes agregar productos antes de enviar pedido.");
-        // Evita el envío del formulario
-        event.preventDefault();
+        alert("El carrito está vacío. Debes agregar productos antes de enviar el pedido.");
+        event.preventDefault(); // Evita el envío del formulario
     } else {
-        // Crea un campo de formulario oculto para enviar el carrito
-        const carritoInput = document.createElement("input");
-        carritoInput.type = "hidden";
-        carritoInput.name = "carrito";
-        carritoInput.value = JSON.stringify(carrito);
-        document.querySelector("form").appendChild(carritoInput);
+        // Verifica la validación del formulario antes de enviarlo
+        const formulario = document.querySelector("form");
+        if (formulario.checkValidity()) {
+            // Crea un campo de formulario oculto para enviar el carrito
+            const carritoInput = document.createElement("input");
+            carritoInput.type = "hidden";
+            carritoInput.name = "carrito";
+            carritoInput.value = JSON.stringify(carrito);
+            formulario.appendChild(carritoInput);
 
-        // Envía el formulario
-        document.querySelector("form").submit();
+            // Envía el formulario
+            formulario.submit();
+        } else {
+            // El formulario no es válido, no lo envíes y muestra mensajes de error si es necesario
+            alert("Por favor, completa todos los campos requeridos antes de enviar el pedido.");
+            event.preventDefault(); // Evita el envío del formulario
+        }
     }
 }
+
 
     // Función para validar la hora
     function validarHora() {

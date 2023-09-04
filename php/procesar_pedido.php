@@ -77,7 +77,7 @@ $codigoAleatorio = strval($numeroAleatorio);
         echo "Pedido realizado con éxito.
         <br>" ;
         echo "Tu código de recogida es: $codigoAleatorio <br>";
-        echo "<a href='../index.php' class='codigo'>YA HE APUNTADO MI CODIGO</button>";
+        echo "<a href='../index.php' class='codigo'>YA HE APUNTADO MI CODIGO</a>";
         echo '</div>';
     } else {
         echo "Error al realizar la reserva: " . $conn->error;

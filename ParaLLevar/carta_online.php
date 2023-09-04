@@ -125,7 +125,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
     </div> 
 
 
-    <form action="../php/procesar_pedido.php" method="post">
+    <form action="../php/procesar_pedido.php" method="post" id="miFormulario">
     <div class="parte-superior">
    
             <div>
@@ -145,8 +145,8 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
             </div>
 
             <div>
-                    <b><label class="label-reserva1" for="hora">HORA DE RECOGIDA:</label></b>
-                    <select class="input-reserva1" name="hora" id="hora" required onchange="validarHora()">
+                    <b><label class="label-reserva2" for="hora">HORA DE RECOGIDA:</label></b>
+                    <select class="input-reserva1" name="hora" id="hora"  onchange="validarHora()" required> 
                         <option value="" disabled selected>Selecciona una hora</option>
                         <?php
                         // Genera opciones de hora de 13 a 22 en incrementos de 15 minutos
@@ -168,7 +168,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
 
             <div>
             <b> <label  for="">TU NOMBRE:</label></b>
-                    <input class="input-reserva1" type="text" id="nombre" name="nombre" max="" placeholder=""  required>  
+                    <input class="input-reserva1" type="text" id="nombre" name="nombre"  required>  
             </div>
             <div>
             <b> <label  for="">CODIGO DE PROMOCIÓN:</label></b>
@@ -188,7 +188,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
 
        
         <p>Total: <span id="carrito-total">0€</span></p>
-        <button type="submit" id="enviar-pedido" onclick="validarCarrito()">Enviar Pedido</button>
+        <button type="submit" id="enviar-pedido" onclick="validarCarrito(event)">Enviar Pedido</button>
        
     </div>
     </form>
@@ -209,9 +209,9 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
             <select id="guarnicion1">
                 <option value="Patatas Fritas">Patatas Fritas</option>
                 <option value="Baked Potato">Baked Potato</option>
-            </select>
+            </select> <br>
             <button onclick="agregarAlCarrito('MRS STRIPLOIN', document.getElementById('mrs-striploin').value,document.getElementById('guarnicion1').value, 19.20)">Agregar al Carrito</button>
-        </div>
+        </div> 
         <div class="menu-item">
             <h2>MR. STRIPLOIN</h2>
             <p>Nuestro campeón del lomo de novillo, 250 gr. bien crujiente y el interior de color rosa.</p>
@@ -226,7 +226,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
             <select id="guarnicion2">
                 <option value="Patatas Fritas">Patatas Fritas</option>
                 <option value="Baked Potato">Baked Potato</option>
-            </select>
+            </select><br>
             <button onclick="agregarAlCarrito('MR STRIPLOIN', document.getElementById('mr-striploin').value,document.getElementById('guarnicion2').value, 23.80)">Agregar al Carrito</button>
         </div>
 
@@ -244,10 +244,10 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
             <select id="guarnicion3">
                 <option value="Patatas Fritas">Patatas Fritas</option>
                 <option value="Baked Potato">Baked Potato</option>
-            </select>
+            </select><br>
             <button onclick="agregarAlCarrito('FILET MIGNON', document.getElementById('filet-mignon').value,document.getElementById('guarnicion3').value, 27.80)">Agregar al Carrito</button>
         </div>
-
+ 
         <div class="menu-item">
             <h2>GAUCHO STEAK</h2>
             <p>180 gr. de bistec tierno de corazón de cuadril, Baked Potato con Sour Cream.</p>
@@ -262,7 +262,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
             <select id="guarnicion4">
                 <option value="Patatas Fritas">Patatas Fritas</option>
                 <option value="Baked Potato">Baked Potato</option>
-            </select>
+            </select><br>
             <button onclick="agregarAlCarrito('GAUCHO STEAK', document.getElementById('gaucho-steak').value,document.getElementById('guarnicion4').value, 18.70)">Agregar al Carrito</button>
         </div>
         <div class="menu-item">
@@ -279,7 +279,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
             <select id="guarnicion5">
                 <option value="Patatas Fritas">Patatas Fritas</option>
                 <option value="Baked Potato">Baked Potato</option>
-            </select>
+            </select><br>
             <button onclick="agregarAlCarrito('HEREFORD RIB-EYE', document.getElementById('hereford-rib-eye').value,document.getElementById('guarnicion5').value, 22.60)">Agregar al Carrito</button>
         </div>
 
@@ -297,7 +297,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
             <select id="guarnicion6">
                 <option value="Patatas Fritas">Patatas Fritas</option>
                 <option value="Baked Potato">Baked Potato</option>
-            </select>
+            </select><br>
             <button onclick="agregarAlCarrito('Barbacoa de Ternera', document.getElementById('barbacoa-de-ternera').value,document.getElementById('guarnicion6').value, 17.50)">Agregar al Carrito</button>
             
         </div>
@@ -631,14 +631,14 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
             <h2>Verduras Salteadas</h2>
             <p>con pimientos, calabacín, champiñones y cebollas.</p>
             <p class="menu-item-price">4.80€</p>
-    <button onclick="agregarAlCarrito('Steak Dip', '', '', 4.80)">Agregar al Carrito</button>
+    <button onclick="agregarAlCarrito('Verduras Salteadas', '', '', 4.80)">Agregar al Carrito</button>
         </div>
 
         <div class="menu-item">
             <h2>Patatas Fritas</h2>
             <p>De corte fino.</p>
             <p class="menu-item-price">3.80€</p>
-    <button onclick="agregarAlCarrito('Steak Dip', '', '', 3.80)">Agregar al Carrito</button>
+    <button onclick="agregarAlCarrito('Patatas Fritas', '', '', 3.80)">Agregar al Carrito</button>
         </div>
 
         </div>
