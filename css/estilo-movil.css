@@ -11,8 +11,9 @@
       font-family: Arial;
   }
 
-    #overlay {
-    font-size: 100%;
+  #overlay {
+    font-size: 20px;
+    font-family: 'TheSerifExtraBold';
     position: fixed;
     top: 0;
     left: 0;
@@ -31,8 +32,20 @@
     border-radius: 5px;
     text-align: center;
 }
+#popup div{
+  padding-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#popup svg{
+
+  padding-right: 1%;
+  width: 80px;
+}
 
 #entendido {
+  font-size: 20px;
   margin-top: 3%;
     padding: 12px 22px;
     border-radius: 2%;
