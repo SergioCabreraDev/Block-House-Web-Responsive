@@ -33,7 +33,7 @@ Luego pones tu nombre y al darle al boton la reserva se guarda en la tabla del r
  - Notificaciones, Feedback, Emitir Facturas: son formularios varios los cuales se pueden usar solamente si tienes una cuenta, estos formulario actualmente no esta conectados a una base de datos, ya que el hosting que tengo contratado tiene un espacio muy limitado.
  - Wi-Fi: un apartado no muy relevante en el cual dice como conectarse a la red wifi del local.
  - Eliminar Cuenta: aqui encontraremos un boton el cual borrara la cuenta de la tabla usuarios en la base de datos.
- - 
+   
 ## 3. Sistema de compras online, desarrollado JS en MYSQL.
 El sistema de compra consiste en hacer un pedido añadiendo los productos al carrito, el usuario tendrá que elegir el restaurante donde irá a recoger el pedido y una hora de recogida, el formulario no te dejara elegir una hora inferior a la actual.
 Por ultimo al hacer el pedido te dara un codigo de recogida para enseñar en el restaurante.
