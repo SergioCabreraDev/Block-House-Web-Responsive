@@ -1,7 +1,7 @@
 # Block-House-Web-Responsive
 ## Link of website: sergiocabreradev-bh.site
-This website is based on the functions and services provided by the [blockhouse.es](https://www.block-house.es/), but with a more modern and updated design. 
-The original website did not have a responsive design, so I decided to implement it to adapt to the screens of all devices.
+Este sitio web está basado en las funciones y servicios proporcionados por [blockhouse.es](https://www.block-house.es/), pero con un diseño más moderno y actualizado.
+El sitio web original no tenía un diseño responsive, así que decidí implementarlo para adaptarlo a las pantallas de todos los dispositivos.
 Web Oficial:
 ![image](https://github.com/SergioCabreraDev/Block-House-Web-Responsive/assets/126020976/a9d5fe89-b781-4ae1-b2be-d9e63e0acf4d)
 Mi Web:
@@ -36,7 +36,9 @@ Algo que no tenia la web oficial era un diseño responsive, por eso pense que se
 ![image](https://github.com/SergioCabreraDev/Block-House-Web-Responsive/assets/126020976/2e094672-5357-4197-a3e5-ec1062a4cc86)
 ## 805 x 904 (Pantalla de Ipad o Tablets, con minimo 768px de ancho hasta 1024px)
 Aqui se puede apreciar que el menu cambia un icono parecido a una hamburguesa el cula si pinchas se abre el menu, esto hace que sea mucho mas comodo ver el menu en esta resolucion.
+
 ![image](https://github.com/SergioCabreraDev/Block-House-Web-Responsive/assets/126020976/1a39df64-09c7-4666-a152-35238aa695ad)
+
 ![image](https://github.com/SergioCabreraDev/Block-House-Web-Responsive/assets/126020976/db9a7a2d-22b1-414d-b03c-f4bba7b70c23)
 
 ## 805 x 904 (Pantalla Movil,para pantallas con maximo 767px de ancho)
