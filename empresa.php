@@ -21,7 +21,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
     <title>Block House - Best Steaks since 1968</title>
 </head>
 <body>
-    <div class="superior">
+<div class="superior">
     
     <nav class="nav">
 
@@ -76,13 +76,13 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
 
                     </a>
                 </li>
-               
+                
                 <li class="dropdown__list">
                     <a href="reservar/reservas.php" class="dropdown__link">
                         <span class="dropdown__span"><B>RESERVAR</B></span>
                     </a>
                 </li>
-           
+              
                     <?php if ($usuarioAutenticado) { ?>
                         <li class="dropdown__list">
                     <a href="#" class="dropdown__link">
@@ -118,62 +118,49 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
         </div>
 
     </nav>
-    <center>
-            
-   
-        
-    </div> 
-    </div>
-    </div> 
-    </center>
+ </div>
+ </div>
+ 
+ <div id="contenido_empresa">
+<h3>EMPRESA</h3>
 
-    <div class="margenes-login">
+<b><p>HLM Restaurantes S.L. <br>
+Paseo Mallorca 16. <br>
+07012 Palma de Mallorca.</p></b>
 
+<p>
+Teléfono de la Administración Central: 971-707-008 <br>
+Fax de la Administración Central 971-237-935<br>
+Teléfono de los restaurantes: Ver información en 'Nuestros Restaurantes'<br>
+CIF: B07 740 483 <br>
+Administrador Único: Jens-Peter Cohrs <br>
+En cumplimiento de lo dispuesto en el artículo 10 de la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico se informa que la entidad prestadora de servicios a través de la dirección de Internet http://www.block-house.es es esta misma empresa. <br>
+<br>
 
-        <div class="login-container" >
-            <h2>Iniciar sesión</h2>
-            <form id="login-form" method="POST" action="php/validacionlogin.php">
-              <label for="email">Correo electrónico:</label>
-              <input type="email" id="email" name="email" required>
-              
-              <label for="password">Contraseña:</label>
-              <input type="password" id="password" name="password" required>
-            <div class="botoneslogin">
-                <button class="botonlogin" type="submit">INICIAR SESIÓN</button>
-            
-            </form>
-        </div>   
-        <form class="registro" action="">
-            <p>Si aun no te has registrado haz click aqui</p>
-            <button class="botonregistro" type="button" onclick="window.location.href = 'registro.php';">CREAR NUEVA CUENTA</button>
-        </form>
-          </div>
-        </div>        
+<b>Reglamento Europeo de Protección de Datos:</b> <br>
+Los datos que Usted introduzca para crear un login no seran utilizados por la empresa solo por Usted.
+Las Comunicaciones a traves de nuestro sistema siempre e individualmente serán a instancia suya.
+Ejemplo: Si Usted requiere una factura de un tiquet, el sistema se la envia con los datos introducidos.
+El sistema o la empresa no analiza datos introducidos ni los proporciona a terceros. Los datos estan guardados con seguridad. Las contraseñas estan guardadas encriptadas.
+</p>
+</div>
 
-<footer>
-    <div class="footer-content">
-        <ul class="footer-links">
-            <li><p>Sergio Cabrera</p></li>
-            <li><a href="#"><p>Administracion Central</p></a></li>
-          </ul>
-      <ul class="footer-links">
-        <li><a href="index.php">Inicio</a></li>
-        <li><a href="empresa.php">Empresa</a></li>
-        <li><a href="https://www.facebook.com/blockhouseES/"><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" fill="white"></path> </svg>
-        </a></li>
-      </ul>
-    </div>
-  </footer>
-  
-<script>
-     // Obtenemos el elemento del input de fecha
- const fechaInput = document.getElementById('campo2');
+        <footer>
+            <div class="footer-content">
+                <ul class="footer-links">
+                    <li><p>Sergio Cabrera</p></li>
+                    <li><a href="#"><p>Administracion Central</p></a></li>
+                  </ul>
+              <ul class="footer-links">
+                <li><a href="index.php">Inicio</a></li>
+                <li><a href="#">Empresa</a></li>
+                <li><a href="https://www.facebook.com/blockhouseES/"><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" fill="white"></path> </svg>
+                </a></li>
+              </ul>
+            </div>
+          </footer>
 
-// Obtenemos la fecha actual en formato yyyy-mm-dd
-const fechaActual = new Date().toISOString().slice(0, 10);
+      
 
-// Establecemos la fecha actual como valor predeterminado en el input de fecha
-fechaInput.value = fechaActual;
-</script>
 </body>
 </html>

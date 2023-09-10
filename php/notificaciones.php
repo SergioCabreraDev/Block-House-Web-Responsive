@@ -138,7 +138,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
     <input type="checkbox" name="novedades" value="1">
     <label for="novedades">Novedades y últimas noticias relevantes de Block House España</label><br>
     
-    <button type="submit"><b>GUARDAR</b></button>
+    <button type=""><b>GUARDAR</b></button>
 </form>
 
 

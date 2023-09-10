@@ -20,18 +20,7 @@ $fecha = $_POST['fecha'];
 $hora = $_POST['hora'];
 $nombre = $_POST['nombre']; // Agregamos la variable para el nombre
 
-    // Conexión a la base de datos
-    $servername = "localhost"; // Cambia esto al nombre de tu servidor MySQL
-    $username = "root"; // Cambia esto al nombre de tu usuario de MySQL
-    $password = ""; // Cambia esto a tu contraseña de MySQL
-    $dbname = "bh_db"; // Nombre de la base de datos específica del restaurante
-
-    $conn = new mysqli($servername, $username, $password, $dbname);
-
-    // Verifica la conexión
-    if ($conn->connect_error) {
-        die("Conexión fallida: " . $conn->connect_error);
-    }
+include("conexion.php");
 // Consulta si la hora ya está ocupada en la tabla correspondiente al restaurante
 $sql = "SELECT COUNT(*) as count FROM $restaurante WHERE fecha = '$fecha' AND hora = '$hora'";
 $resultado = $conn->query($sql);
@@ -48,7 +37,7 @@ if ($resultado) {
         echo '</div>';
         echo '<script>
         setTimeout(function() {
-            window.location.href = "../index.php";
+            window.location.href = "../reservar/reservas.php";
         }, 5000); // 5000 milisegundos = 3 segundos
       </script>';
     } else {

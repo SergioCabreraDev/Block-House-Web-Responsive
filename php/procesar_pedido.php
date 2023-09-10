@@ -19,18 +19,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $restaurante = $_POST['restaurante'];
     $hora = $_POST['hora'];
     $nombre = $_POST['nombre'];
-        // Conexión a la base de datos
-        $servername = "localhost"; // Cambia esto al nombre de tu servidor MySQL
-        $username = "root"; // Cambia esto al nombre de tu usuario de MySQL
-        $password = ""; // Cambia esto a tu contraseña de MySQL
-        $dbname = "bh_db"; // Nombre de la base de datos específica del restaurante
+
+    include("conexion.php");
     
-        $conn = new mysqli($servername, $username, $password, $dbname);
-    
-        // Verifica la conexión
-        if ($conn->connect_error) {
-            die("Conexión fallida: " . $conn->connect_error);
-        }
     // Verifica si el campo "carrito" está presente en la solicitud POST
     if (isset($_POST["carrito"])) {
         // Obtiene el carrito de productos en formato JSON

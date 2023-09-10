@@ -29,6 +29,10 @@ footer {
   font-size: 324423px;
 }
 
+p{
+  font-family: 'TheSerifExtraBold';
+}
+
   @media (min-width: 1500px) {
 
    /* Estilos generales para todo el documento */
@@ -304,6 +308,7 @@ h1{
   }
 
   footer {
+
     background-color:rgb(119, 0, 0);
     color: #fff;
     padding: 20px;
@@ -772,7 +777,7 @@ h1{
 .notificaciones{
   margin-left: 10%;
   margin-right: 10%;
-  margin-bottom: 20%;
+  margin-bottom: 40%;
 }
 .formulario-noti{
   font-size: 20px;
@@ -797,8 +802,15 @@ h1{
 }
 
 #contenido_factura{
+
   margin: 5%;
   font-size: 20px;
+}
+.bajar-footer{
+  margin-bottom: 30%;
+}
+.footer_inicioexitoso{
+  margin-top: 33%;
 }
 .formulario_factura button {
   margin-top: 1%;
@@ -841,6 +853,11 @@ display: none;
     margin-top: 10%;
     align-items: center;
     text-align: center;
+    font-size: 25px;
+
+  }
+  #eliminar-form h3{
+    font-family: 'TheSerifExtraBold';
   }
   .novedades1 {
     margin: 0 auto;
@@ -982,6 +999,41 @@ display: none;
   display: none;
  }
 
+ #contenido_empresa{
+  margin: 4% 20%;
+  font-size: 20px;
+ }
+
+ #contenido_empresa h3{
+  font-size: 30px;
+
+ }
+ #contenido_empresa b{
+  text-decoration: underline;
+ }
+   /* Estilos para el botón de cierre de sesión */
+
+   .boton-cerrar-sesion {
+    margin-top: 10%;
+    background-color: #FF0000; /* Color rojo */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .boton-cerrar-sesion:hover {
+    background-color: #CC0000; /* Cambia el color al pasar el cursor sobre el botón */
+  }
+  .cerrarsesion_p{
+    margin-bottom: 2%;
+  }
+  .contenedor_inicio_exitoso{
+    font-size: 20px;
+    margin-bottom: 48%;
+  }
 
 /* Declara la fuente personalizada */
 @font-face {
@@ -1304,6 +1356,7 @@ h1{
   }
 
   footer {
+
     background-color:rgb(119, 0, 0);
     color: #fff;
     padding: 20px;
@@ -1535,6 +1588,9 @@ h1{
  
     padding-bottom: 13%;
 
+  }
+  .footer_inicioexitoso{
+    margin-top: 33%;
   }
   .cartademenu{
   padding: 6%;
@@ -1794,28 +1850,44 @@ h1{
    .botonregistro:hover {
     background-color: #4b0000;
   }
+  #eliminar-form{
+    margin-top: 10%;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 40%;
+  }
+  #eliminar-form h3{
+    font-family: 'TheSerifExtraBold';
+  }
   /* Estilos para el botón de cierre de sesión */
 
-/* Estilos para el botón de cierre de sesión */
-.boton-cerrar-sesion {
-  margin-top: 10%;
-  background-color: #FF0000; /* Color rojo */
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.boton-cerrar-sesion:hover {
-  background-color: #CC0000; /* Cambia el color al pasar el cursor sobre el botón */
-}
+  .boton-cerrar-sesion {
+    margin-top: 10%;
+    background-color: #FF0000; /* Color rojo */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .boton-cerrar-sesion:hover {
+    background-color: #CC0000; /* Cambia el color al pasar el cursor sobre el botón */
+  }
+  .cerrarsesion_p{
+    margin-bottom: 2%;
+  }
+  .contenedor_inicio_exitoso{
+    font-size: 20px;
+    margin-bottom: 63%;
+  }
 
 .notificaciones{
   margin-left: 10%;
   margin-right: 10%;
-  margin-bottom: 20%;
+  margin-bottom: 50%;
 }
 .formulario-noti{
   font-size: 20px;
@@ -1840,6 +1912,7 @@ h1{
 #contenido_factura{
   margin: 5%;
   font-size: 22px;
+  margin-bottom: 40%;
 }
 
 .formulario_factura button {

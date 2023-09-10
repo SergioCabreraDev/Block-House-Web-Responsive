@@ -78,18 +78,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     
-    // Conexión a la base de datos
-    $servername = "localhost"; // Cambia esto al nombre de tu servidor MySQL
-    $username = "root"; // Cambia esto al nombre de tu usuario de MySQL
-    $password = ""; // Cambia esto a tu contraseña de MySQL
-    $dbname = "bh_db"; // Nombre de la base de datos
-
-    $conn = new mysqli($servername, $username, $password, $dbname);
-
-    // Verifica la conexión
-    if ($conn->connect_error) {
-        die("Conexión fallida: " . $conn->connect_error);
-    }
+    include("conexion.php");
 
     
 
@@ -133,7 +122,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     
     // Prepara la consulta SQL para insertar los datos en la tabla
-    $sql = "INSERT INTO Usuarios (CorreoElectronico, Contrasena, Restaurante, Nombre, Apellidos, Cumpleanos, Sexo, Telefono) 
+    $sql = "INSERT INTO usuarios (CorreoElectronico, Contrasena, Restaurante, Nombre, Apellidos, Cumpleanos, Sexo, Telefono) 
             VALUES ('$correo', '$contrasena', '$restaurante', '$nombre', '$apellidos', '$cumpleanos', '$sexo', '$telefono')";
 
     // Ejecuta la consulta
