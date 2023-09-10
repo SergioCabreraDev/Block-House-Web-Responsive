@@ -41,4 +41,5 @@ Aqui se puede apreciar que el menu cambia un icono parecido a una hamburguesa el
 
 ## 805 x 904 (Pantalla Movil,para pantallas con maximo 767px de ancho)
 El menu cambia al igual que en las tablets con el mismo diseño.
+
 ![image](https://github.com/SergioCabreraDev/Block-House-Web-Responsive/assets/126020976/a5210a3b-9921-4d01-84ab-14899eb300f7)
